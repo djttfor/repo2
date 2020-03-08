@@ -21,4 +21,16 @@ public class AccountDaoTest {
             System.out.println(account);
         }
     }
+
+    //测试git修改提交
+    @Test
+    public void save(){
+        Account account = new Account();
+        account.setUid(69);
+        account.setMoney(1000.2);
+        account.setAcname("呵呵");
+        account.setPassword("2233");
+        int save = accountDao.save(account);
+        System.out.println(save);
+    }
 }
