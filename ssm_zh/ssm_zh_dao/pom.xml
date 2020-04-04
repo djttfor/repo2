@@ -11,5 +11,12 @@
 
     <artifactId>ssm_zh_dao</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>dj.study</groupId>
+            <artifactId>ssm_zh_domain</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
