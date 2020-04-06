@@ -59,6 +59,16 @@ public class ProductController {
         mv.setViewName("product-list");
         return mv;
     }
+
+
+    /**
+     * Description:
+     * <添加商品>
+     * @param product
+     * @return: java.lang.String
+     * @Author: DJ
+     * @Date: 2020-04-04 17:20
+     */
     @RequestMapping("/addProduct")
     public String addProduct(Product product){
         int i = productService.saveProduct(product);
@@ -66,6 +76,33 @@ public class ProductController {
         return "redirect:all";
     }
 
+    @RequestMapping("/show")
+    public ModelAndView showProduct(@RequestParam(name = "id",required = true) String id) throws Exception {
+        Product product = productService.findById(id);
+        ModelAndView mv = new ModelAndView();
+        mv.addObject("product", product);
+        mv.setViewName("product_show");
+        return mv;
+    }
+
+    /**
+     * 删除产品
+     * @return
+     */
+    @RequestMapping("/del")
+    public String deleteProduct(){
+        System.out.println("信息:");
+        return null;
+    }
+
+
+/**
+* Description:
+* <测试>
+* @return: mv
+* @Author: DJ
+* @Date: 2020-04-04 17:21
+*/
     @RequestMapping("/test")
     public ModelAndView test(Product product){
         ModelAndView mv = new ModelAndView();

@@ -60,7 +60,7 @@
     </resultMap>
 
     <sql id="order1">o.id oid,o.order_number,o.order_time ,o.people_count,o.order_desc,o.pay_type,o.order_status,</sql>
-    <sql id="product1">p.id pid,p.product_number,p.city_name,p.departure_time,p.product_price,p.product_desc,p.product_status,</sql>
+    <sql id="product1">p.id pid,p.product_number,p.product_name,p.city_name,p.departure_time,p.product_price,p.product_desc,p.product_status,</sql>
     <sql id="member1">m.id mid,m.name m_name,m.nick_name,m.phone_number,m.email,</sql>
     <sql id="traveller1">t.id tid,t.name t_name,t.sex,t.phone_number,t.credentials_type,t.credentials_number,t.traveller_type</sql>
     <sql id="table4s">orders o,product p,member m,traveller t</sql>

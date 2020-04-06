@@ -155,6 +155,61 @@
 					</div>
 				</div>
 			</div>
+				<%--产品信息--%>
+				<div class="panel panel-default">
+					<div class="panel-heading">产品信息</div>
+					<div class="row data-type">
+						<div class="col-md-2 title">产品编号</div>
+						<div class="col-md-4 data text">
+							<input type="text" class="form-control" name="productNumber"
+								   placeholder="产品编号" value="${orders.product.pid}" readonly = "readonly">
+						</div>
+
+						<div class="col-md-2 title">下单时间</div>
+						<div class="col-md-4 data">
+							<div class="input-group date">
+								<div class="input-group-addon">
+									<i class="fa fa-calendar"></i>
+								</div>
+								<input type="text" class="form-control pull-right" name="departureTime" id="dateTimePicker" value="${product.departureTime}" readonly = "readonly">
+							</div>
+						</div>
+
+						<div class="col-md-2 title">路线名称</div>
+						<div class="col-md-4 data text">
+							<input type="text" class="form-control" name="productName"
+								   placeholder="路线名称" value="${orders.product.productName}"  readonly = "readonly">
+						</div>
+
+						<div class="col-md-2 title">出发城市</div>
+						<div class="col-md-4 data text">
+							<input type="text" class="form-control" name="cityName"
+								   placeholder="出发城市" value="${orders.product.cityName}" readonly = "readonly">
+						</div>
+
+						<div class="col-md-2 title">产品价格</div>
+						<div class="col-md-4 data">
+							<input type="text" class="form-control" placeholder="产品价格"
+								   name="productPrice" value="${orders.product.productPrice}" readonly = "readonly">
+						</div>
+
+						<div class="col-md-2 title">产品状态</div>
+						<div class="col-md-4 data">
+							<select class="form-control select2" style="width: 100%"
+									name="productStatus" readonly = "readonly">
+								<option value="${orders.product.productStatus}" selected="selected">${orders.product.productStatus==1 ?'开启':'关闭'}</option>
+							</select>
+						</div>
+
+						<div class="col-md-2 title rowHeight2x">其他信息</div>
+						<div class="col-md-10 data rowHeight2x">
+							<textarea class="form-control" rows="3" placeholder="请输入..." name="productDesc" readonly = "readonly">
+								${orders.product.productDesc}
+							</textarea>
+						</div>
+					</div>
+
+				</div>
 			<!--订单信息/--> <!--游客信息-->
 			<div class="panel panel-default">
 				<div class="panel-heading">游客信息</div>
@@ -240,13 +295,7 @@
 		<!-- 内容区域 /-->
 
 		<!-- 底部导航 -->
-		<footer class="main-footer">
-		<div class="pull-right hidden-xs">
-			<b>Version</b> 1.0.8
-		</div>
-		<strong>Copyright &copy; 2014-2017 <a
-			href="http://www.itcast.cn">研究院研发部</a>.
-		</strong> All rights reserved. </footer>
+		<jsp:include page="footer_my.jsp"/>
 		<!-- 底部导航 /-->
 
 	</div>

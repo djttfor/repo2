@@ -38,4 +38,9 @@ public class ProductServiceImpl implements ProductService {
     public int saveProduct(Product product) {
         return productDao.saveProduct(product);
     }
+
+    @Override
+    public Product findById(String id) throws Exception {
+        return productDao.findProductById(id);
+    }
 }

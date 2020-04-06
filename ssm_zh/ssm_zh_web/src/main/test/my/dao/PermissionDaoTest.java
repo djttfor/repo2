@@ -1,6 +1,6 @@
 package my.dao;
 
-import my.domain.Role;
+import my.domain.Permission;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,14 +11,14 @@ import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:spring/applicationContext.xml")
-public class RoleDaoTest {
+public class PermissionDaoTest {
     @Autowired
-    RoleDao roleDao;
+    PermissionDao permissionDao;
     @Test
-    public void findRoleByUserId() throws Exception {
-        List<Role> role = roleDao.findRoleByUserId("036E71474B011C3ACE6D859893B49168");
-        for (Role role1 : role) {
-            System.out.println(role1);
+    public void findByRoleId() throws Exception {
+        List<Permission> permissions = permissionDao.findByRoleId("1538AAC2DD996145FC4B7162CBF266EC");
+        for (Permission permission : permissions) {
+            System.out.println(permission);
         }
     }
 }

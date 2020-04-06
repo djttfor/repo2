@@ -1,6 +1,7 @@
 package my.dao;
 
 import my.domain.Role;
+import org.apache.ibatis.annotations.Many;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
@@ -14,7 +15,9 @@ public interface RoleDao {
     @Results(id = "roleMap",value = {
             @Result(id = true,property = "id",column = "id"),
             @Result(property = "roleName",column = "role_name"),
-            @Result(property = "roleDesc",column = "role_desc")
+            @Result(property = "roleDesc",column = "role_desc"),
+            @Result(property = "permissions",column = "id",javaType = java.util.List.class,
+                    many = @Many(select = "my.dao.PermissionDao.findByRoleId"))
     })
-    public List<Role> findRoleByUserId(String userId) throws Exception;
+    List<Role> findRoleByUserId(String userId) throws Exception;
 }

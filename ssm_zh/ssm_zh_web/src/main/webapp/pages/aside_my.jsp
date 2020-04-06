@@ -46,7 +46,7 @@
 
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-cube"></i> <span>全部管理</span>
+                    <i class="fa fa-cube"></i> <span>数据管理</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
@@ -65,9 +65,21 @@
                         </a>
                     </li>
 
-                    <li id="order-cancel">
+                    <li id="user-manage">
+                        <a href="${pageContext.request.contextPath}/user/all">
+                            <i class="fa fa-circle-o"></i> 用户管理
+                        </a>
+                    </li>
+
+                    <li id="permission_manager">
                         <a href="${pageContext.request.contextPath}/index.jsp">
-                            <i class="fa fa-circle-o"></i> 退款
+                            <i class="fa fa-circle-o"></i> 资源权限管理
+                        </a>
+                    </li>
+
+                    <li id="log_manager">
+                        <a href="${pageContext.request.contextPath}/index.jsp">
+                            <i class="fa fa-circle-o"></i> 用户日志
                         </a>
                     </li>
 

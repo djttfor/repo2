@@ -61,4 +61,7 @@ public interface ProductDao {
     @ResultMap("productMap")
     Product findProductById(String id)throws Exception;
 
+    @Delete("delete from product where id = #{id}")
+    int deleteProduct(String id);
+
 }

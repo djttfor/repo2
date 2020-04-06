@@ -1,8 +1,6 @@
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
-<fmt:formatDate value="${orc.orderTime}" pattern="yyyy-MM-dd HH:mm:ss"/>
 <!DOCTYPE html>
 <html>
 
@@ -141,80 +139,50 @@
     <!-- @@block = content -->
 
     <div class="content-wrapper">
-
+        <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                数据管理
-                <small>数据表单</small>
+                404 错误页面
             </h1>
+
             <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> 首页</a></li>
-                <li><a href="#">数据管理</a></li>
-                <li class="active">数据表单</li>
+                <li><a href="${pageContext.request.contextPath}/index.jsp"><i class="fa fa-dashboard"></i> 首页</a></li>
+                <li class="active">404 错误</li>
             </ol>
+
         </section>
-       <%--此处提交表单--%>
-        <form autocomplete="off" method="post" action="${pageContext.request.contextPath}/product/test">
 
-        <div class="panel panel-default">
-        <div class="panel-heading">产品信息</div>
-        <div class="row data-type">
-            <div class="col-md-2 title">产品编号</div>
-            <div class="col-md-4 data text">
-                <input type="text" class="form-control" name="productNumber"
-                       placeholder="产品编号" value="">
-            </div>
+        <!-- Main content -->
+        <section class="content">
+            <div class="error-page">
+                <h2 class="headline text-yellow"> 404</h2>
 
-            <div class="col-md-2 title">下单时间</div>
-            <div class="col-md-4 data">
-                <div class="input-group date">
-                    <div class="input-group-addon">
-                        <i class="fa fa-calendar"></i>
-                    </div>
-                    <input type="text" class="form-control pull-right" name="departureTime" id="dateTimePicker">
+                <div class="error-content">
+                    <h3><i class="fa fa-warning text-yellow"></i>出错了</h3>
+                    <p>
+                        ${message}
+                    </p>
+                    <p>
+                        你可以返回上一步<button type="button" class="btn bg-maroon" onclick="history.back(-1);">返回</button>
+                    </p>
+
+                    <%--<form class="search-form">
+                        <div class="input-group">
+                            <input type="text" name="search" class="form-control" placeholder="搜索">
+
+                            <div class="input-group-btn">
+                                <button type="submit" name="submit" class="btn btn-warning btn-flat"><i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- /.input-group -->
+                    </form>--%>
                 </div>
+                <!-- /.error-content -->
             </div>
-
-            <div class="col-md-2 title">路线名称</div>
-            <div class="col-md-4 data text">
-                <input type="text" class="form-control" name="productName"
-                       placeholder="路线名称" value="">
-            </div>
-
-            <div class="col-md-2 title">出发城市</div>
-            <div class="col-md-4 data text">
-                <input type="text" class="form-control" name="cityName"
-                       placeholder="出发城市" value="">
-            </div>
-
-            <div class="col-md-2 title">产品价格</div>
-            <div class="col-md-4 data">
-                <input type="text" class="form-control" placeholder="产品价格"
-                       name="productPrice" value="">
-            </div>
-
-            <div class="col-md-2 title">产品状态</div>
-            <div class="col-md-4 data">
-                <select class="form-control select2" style="width: 100%"
-                        name="productStatus">
-                    <option value="0" selected="selected">关闭</option>
-                    <option value="1">开启</option>
-                </select>
-            </div>
-
-            <div class="col-md-2 title rowHeight2x">其他信息</div>
-            <div class="col-md-10 data rowHeight2x">
-                <textarea class="form-control" rows="3" placeholder="请输入..." name="productDesc"></textarea>
-            </div>
-            <div class="col-md-10 data text-center">
-                <button type="submit" class="btn bg-maroon">保存</button>
-                <button type="button" class="btn bg-default" onclick="history.back(-1);">返回</button>
-            </div>
-
-        </div>
-
-        </div>
-        </form>
+            <!-- /.error-page -->
+        </section>
+        <!-- /.content -->
     </div>
 
     <!-- @@close -->

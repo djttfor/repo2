@@ -33,6 +33,10 @@
 
         <!-- 关闭跨域请求 -->
         <security:csrf disabled="true"/>
+        <!--<security:remember-me remember-me-parameter="rmp"/>-->
+        <security:remember-me remember-me-parameter="rmp" data-source-ref="dataSource"
+                              token-validity-seconds="86400"/>
+
         <!-- 退出 -->
         <security:logout invalidate-session="true" logout-url="/logout" logout-success-url="/login.jsp" />
 
@@ -41,8 +45,8 @@
     <!-- 切换成数据库中的用户名和密码 -->
     <security:authentication-manager>
         <security:authentication-provider user-service-ref="userService">
-            <!-- 配置加密的方式
-            <security:password-encoder ref="passwordEncoder"/>-->
+            <!-- 配置加密的方式-->
+            <security:password-encoder ref="passwordEncoder"/>
         </security:authentication-provider>
     </security:authentication-manager>
 

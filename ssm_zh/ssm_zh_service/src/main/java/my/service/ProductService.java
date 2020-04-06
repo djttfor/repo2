@@ -26,4 +26,6 @@ public interface ProductService {
      * @return 返回结果
      */
     int saveProduct(Product product);
+
+    Product findById(String id)throws Exception;
 }

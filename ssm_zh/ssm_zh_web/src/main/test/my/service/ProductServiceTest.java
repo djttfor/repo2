@@ -45,5 +45,10 @@ public class ProductServiceTest {
             System.out.println(product);
         }
     }
+    @Test
+    public void findById() throws Exception {
+        Product product = productService.findById("49E31F996E1911EA9194000C29C426BD");
+        System.out.println(product);
+    }
 
 }

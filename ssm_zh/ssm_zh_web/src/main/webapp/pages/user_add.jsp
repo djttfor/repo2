@@ -1,13 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-
 <head>
 <!-- 页面meta -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
 <title>数据 - AdminLTE2定制版</title>
 <meta name="description" content="AdminLTE2定制版">
 <meta name="keywords" content="AdminLTE2定制版">
@@ -17,49 +15,6 @@
 	content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
 	name="viewport">
 
-
-
-
-
-
-
-
-<!-- jQuery 2.2.3 -->
-<!-- jQuery UI 1.11.4 -->
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<!-- Bootstrap 3.3.6 -->
-<!-- Morris.js charts -->
-<!-- Sparkline -->
-<!-- jvectormap -->
-<!-- jQuery Knob Chart -->
-<!-- daterangepicker -->
-<!-- datepicker -->
-<!-- Bootstrap WYSIHTML5 -->
-<!-- Slimscroll -->
-<!-- FastClick -->
-<!-- iCheck -->
-<!-- AdminLTE App -->
-<!-- 表格树 -->
-<!-- select2 -->
-<!-- bootstrap color picker -->
-<!-- bootstrap time picker -->
-<!--<script src="${pageContext.request.contextPath}/${pageContext.request.contextPath}/${pageContext.request.contextPath}/plugins/timepicker/bootstrap-timepicker.min.js"></script>-->
-<!-- Bootstrap WYSIHTML5 -->
-<!--bootstrap-markdown-->
-<!-- CK Editor -->
-<!-- InputMask -->
-<!-- DataTables -->
-<!-- ChartJS 1.0.1 -->
-<!-- FLOT CHARTS -->
-<!-- FLOT RESIZE PLUGIN - allows the chart to redraw when the window is resized -->
-<!-- FLOT PIE PLUGIN - also used to draw donut charts -->
-<!-- FLOT CATEGORIES PLUGIN - Used to draw bar charts -->
-<!-- jQuery Knob -->
-<!-- Sparkline -->
-<!-- Morris.js charts -->
-<!-- Ion Slider -->
-<!-- Bootstrap slider -->
-<!-- 页面meta /-->
 
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/plugins/bootstrap/css/bootstrap.min.css">
@@ -103,6 +58,8 @@
 	href="${pageContext.request.contextPath}/plugins/ionslider/ion.rangeSlider.skinNice.css">
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/plugins/bootstrap-slider/slider.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.css">
 </head>
 
 <body class="hold-transition skin-purple sidebar-mini">
@@ -110,53 +67,90 @@
 	<div class="wrapper">
 
 		<!-- 页面头部 -->
-		<!-- 页面头部 -->
-<jsp:include page="pages/header_my.jsp"/>
-<!-- 页面头部 /-->
+		<jsp:include page="header_my.jsp"/>
 		<!-- 页面头部 /-->
-
 		<!-- 导航侧栏 -->
-		<jsp:include page="pages/aside_my.jsp"/>
+		<jsp:include page="aside_my.jsp"/>
 		<!-- 导航侧栏 /-->
 
 		<!-- 内容区域 -->
 		<div class="content-wrapper">
-			<!-- Content Header (Page header) -->
+
+			<!-- 内容头部 -->
 			<section class="content-header">
-				<h1>登录失败 页面</h1>
-
-				<ol class="breadcrumb">
-					<li><a href="${pageContext.request.contextPath}/index.jsp"><i
-							class="fa fa-dashboard"></i> 首页</a></li>
-					<li class="active">登录失败</li>
-				</ol>
-
+			<h1>
+				用户管理 <small>用户表单</small>
+			</h1>
+			<ol class="breadcrumb">
+				<li><a href="${pageContext.request.contextPath}/index.jsp"><i
+						class="fa fa-dashboard"></i> 首页</a></li>
+				<li><a
+					href="${pageContext.request.contextPath}/user/all">用户管理</a></li>
+				<li class="active">用户表单</li>
+			</ol>
 			</section>
+			<!-- 内容头部 /-->
 
-			<!-- Main content -->
-			<section class="content">
-				<div class="error-page">
-				
+			<form action="${pageContext.request.contextPath}/user/save"
+				method="post">
+				<!-- 正文区域 -->
+				<section class="content"> <!--产品信息-->
 
-					<div class="error-content">
-						
-						<p>
-							登录失败 , 你可以 <a href="${pageContext.request.contextPath}/login.jsp">返回到登录页面</a>
-							重新登录
-						</p>
+				<div class="panel panel-default">
+					<div class="panel-heading">用户信息</div>
+					<div class="row data-type">
 
-						
+						<div class="col-md-2 title">用户名称</div>
+						<div class="col-md-4 data">
+							<input type="text" class="form-control" name="username"
+								placeholder="用户名称" value="">
+						</div>
+						<div class="col-md-2 title">密码</div>
+						<div class="col-md-4 data">
+							<input type="password" class="form-control" name="password"
+								placeholder="密码" value="">
+						</div>
+						<div class="col-md-2 title">邮箱</div>
+						<div class="col-md-4 data">
+							<input type="text" class="form-control" name="email"
+								placeholder="邮箱" value="">
+						</div>
+						<div class="col-md-2 title">联系电话</div>
+						<div class="col-md-4 data">
+							<input type="text" class="form-control" name="phoneNum"
+								placeholder="联系电话" value="">
+						</div>
+						<div class="col-md-2 title">用户状态</div>
+						<div class="col-md-4 data">
+							<select class="form-control select2" style="width: 100%"
+								name="status">
+								<option value="0" selected="selected">关闭</option>
+								<option value="1">开启</option>
+							</select>
+						</div>
+
 					</div>
-					<!-- /.error-content -->
 				</div>
-				<!-- /.error-page -->
-			</section>
-			<!-- /.content -->
+				<!--订单信息/--> <!--工具栏-->
+				<div class="box-tools text-center">
+					<button type="submit" class="btn bg-maroon">保存</button>
+					<button type="button" class="btn bg-default"
+						onclick="history.back(-1);">返回</button>
+				</div>
+				<!--工具栏/--> </section>
+				<!-- 正文区域 /-->
+			</form>
 		</div>
 		<!-- 内容区域 /-->
 
 		<!-- 底部导航 -->
-		<jsp:include page="pages/footer_my.jsp"/>
+		<footer class="main-footer">
+		<div class="pull-right hidden-xs">
+			<b>Version</b> 1.0.8
+		</div>
+		<strong>Copyright &copy; 2014-2017 <a
+			href="http://www.itcast.cn">研究院研发部</a>.
+		</strong> All rights reserved. </footer>
 		<!-- 底部导航 /-->
 
 	</div>
@@ -245,6 +239,9 @@
 		src="${pageContext.request.contextPath}/plugins/ionslider/ion.rangeSlider.min.js"></script>
 	<script
 		src="${pageContext.request.contextPath}/plugins/bootstrap-slider/bootstrap-slider.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
+
 	<script>
 		$(document).ready(function() {
 			// 选择框
@@ -264,11 +261,9 @@
 				liObj.addClass("active");
 			}
 		}
-
-		$(document).ready(function() {
-			setSidebarActive("admin-500");
-		});
 	</script>
+
+
 </body>
 
 </html>

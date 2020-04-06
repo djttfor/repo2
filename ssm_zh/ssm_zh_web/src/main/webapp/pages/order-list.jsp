@@ -166,12 +166,12 @@
         <!-- 内容头部 -->
         <section class="content-header">
             <h1>
-                数据管理 <small>数据列表</small>
+                数据管理 <small>订单列表</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> 首页</a></li>
                 <li><a href="#">数据管理</a></li>
-                <li class="active">数据列表</li>
+                <li class="active">订单列表</li>
             </ol>
         </section>
         <!-- 内容头部 /-->
@@ -380,14 +380,7 @@
     <!-- 内容区域 /-->
 
     <!-- 底部导航 -->
-    <footer class="main-footer">
-        <div class="pull-right hidden-xs">
-            <b>Version</b> 1.0.8
-        </div>
-        <strong>Copyright &copy; 2014-2017 <a
-                href="http://www.itcast.cn">研究院研发部</a>.
-        </strong> All rights reserved.
-    </footer>
+   <jsp:include page="footer_my.jsp"/>
     <!-- 底部导航 /-->
 
 </div>
