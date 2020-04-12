@@ -71,14 +71,20 @@
                         </a>
                     </li>
 
+                    <li id="role_manager">
+                        <a href="${pageContext.request.contextPath}/role/all">
+                            <i class="fa fa-circle-o"></i> 角色管理
+                        </a>
+                    </li>
+
                     <li id="permission_manager">
-                        <a href="${pageContext.request.contextPath}/index.jsp">
+                        <a href="${pageContext.request.contextPath}/permission/all">
                             <i class="fa fa-circle-o"></i> 资源权限管理
                         </a>
                     </li>
 
                     <li id="log_manager">
-                        <a href="${pageContext.request.contextPath}/index.jsp">
+                        <a href="${pageContext.request.contextPath}/syslog/all">
                             <i class="fa fa-circle-o"></i> 用户日志
                         </a>
                     </li>

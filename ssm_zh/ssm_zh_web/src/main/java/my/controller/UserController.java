@@ -1,6 +1,7 @@
 package my.controller;
 
 import com.github.pagehelper.PageInfo;
+import my.domain.Role;
 import my.domain.UserInfo;
 import my.service.UserService;
 import my.util.exception.MyException;
@@ -59,4 +60,23 @@ public class UserController {
         return "forward:all";
     }
 
+    /**
+     * 查询出用户未拥有的角色,然后跳转到添加角色页面
+     * @param userId
+     * @return
+     */
+    @RequestMapping("/addRole")
+    public ModelAndView addRoleToUser(@RequestParam(name = "id",required = true) String userId){
+        List<Role> roleList = userService.findRolesByUser(userId);
+        ModelAndView mv = new ModelAndView();
+        mv.addObject("userId", userId);
+        mv.addObject("roleList", roleList);
+        mv.setViewName("user-role-add");
+        return mv;
+    }
+    @RequestMapping("addRoleToUser")
+    public String addRoleToUser (String userId,String[] ids) throws Exception {
+        userService.addRoleToUser(userId,ids);
+        return "forward:all";
+    }
 }

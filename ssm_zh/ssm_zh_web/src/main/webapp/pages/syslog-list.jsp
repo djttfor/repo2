@@ -166,12 +166,12 @@
 			<!-- 内容头部 -->
 			<section class="content-header">
 				<h1>
-					数据管理 <small>产品列表</small>
+					数据管理 <small>用户日志</small>
 				</h1>
 				<ol class="breadcrumb">
 					<li><a href="#"><i class="fa fa-dashboard"></i> 首页</a></li>
 					<li><a href="#">数据管理</a></li>
-					<li class="active">产品列表</li>
+					<li class="active">用户日志</li>
 				</ol>
 			</section>
 			<!-- 内容头部 /-->
@@ -195,7 +195,7 @@
 								<div class="form-group form-inline">
 									<div class="btn-group">
 										<button type="button" class="btn btn-default" title="新建"
-											onclick="location.href='${pageContext.request.contextPath}/pages/user_add.jsp'">
+											onclick="">
 											<i class="fa fa-file-o"></i> 新建
 										</button>
 										<button type="button" class="btn btn-default" title="删除">
@@ -231,27 +231,30 @@
 											id="selall" type="checkbox" class="icheckbox_square-blue">
 										</th>
 										<th class="sorting_asc">ID</th>
-										<th class="sorting_desc">用户名</th>
-										<th class="sorting_asc sorting_asc_disabled">电话号码</th>
-										<th class="sorting_desc sorting_desc_disabled">邮箱</th>
-										<th class="text-center sorting">状态</th>
-										<th class="text-center">操作</th>
+										<th class="sorting_desc">访问时间</th>
+										<th class="sorting_asc sorting_asc_disabled">访问者</th>
+										<th class="sorting_desc sorting_desc_disabled">IP</th>
+										<th class="text-center sorting">访问的url</th>
+										<th class="text-center">访问时长</th>
+										<th class="text-center">访问的方法</th>
 									</tr>
 								</thead>
 								<tbody>
 
 
-									<c:forEach items="${pageInfo.list}" var="user">
+									<c:forEach items="${pageInfo.list}" var="syslog">
 										<tr>
 											<td><input name="ids" type="checkbox"></td>
-											<td>${user.id }</td>
-											<td>${user.username }</td>
-											<td>${user.phoneNum }</td>
-											<td>${user.email }</td>
-											<td>${user.status == 1 ?'激活':'未激活'}</td>
+											<td>${syslog.id }</td>
+											<td>${syslog.visitTime }</td>
+											<td>${syslog.visitor}</td>
+											<td>${syslog.ip }</td>
+											<td>${syslog.url}</td>
+											<td>${syslog.executionTime}</td>
+											<td>${syslog.method}</td>
 											<td class="text-center">
-												<button type="button" class="btn bg-olive btn-xs" onclick="location.href='${pageContext.request.contextPath}/user/show?id=${user.id}'">详情</button>
-												<button type="button" class="btn bg-olive btn-xs" onclick="location.href='${pageContext.request.contextPath}/user/addRole?id=${user.id}'">添加角色</button>
+												<button type="button" class="btn bg-olive btn-xs" onclick="location.href='${pageContext.request.contextPath}/syslog/show?id=${user.id}'">详情</button>
+												<button type="button" class="btn bg-olive btn-xs" onclick="location.href='${pageContext.request.contextPath}/syslog/addRole?id=${user.id}'">添加角色</button>
 												<button type="button" class="btn bg-olive btn-xs">删除</button>
 											</td>
 										</tr>
@@ -324,40 +327,40 @@
 
 					<%--	<div class="box-tools pull-right">
 							<ul class="pagination">
-								<li><a href="${pageContext.request.contextPath}/user/all?pageNum=${pageInfo.firstPage}&pageSize=${pageInfo.pageSize}" aria-label="Previous">首页</a></li>
+								<li><a href="${pageContext.request.contextPath}/syslog/all?pageNum=${pageInfo.firstPage}&pageSize=${pageInfo.pageSize}" aria-label="Previous">首页</a></li>
 								<li>
-									<a href="${pageContext.request.contextPath}/user/all?pageNum=${pageInfo.pageNum-1}&pageSize=${pageInfo.pageSize}">上一页</a>
+									<a href="${pageContext.request.contextPath}/syslog/all?pageNum=${pageInfo.pageNum-1}&pageSize=${pageInfo.pageSize}">上一页</a>
 								</li>
 								<c:forEach begin="${pageInfo.firstPage}" end="${pageInfo.pages}" var="pageNum">
-									<li><a href="${pageContext.request.contextPath}/user/all?pageNum=${pageNum}&pageSize=${pageInfo.pageSize}">${pageNum}</a></li>
+									<li><a href="${pageContext.request.contextPath}/syslog/all?pageNum=${pageNum}&pageSize=${pageInfo.pageSize}">${pageNum}</a></li>
 								</c:forEach>
-								<li><a href="${pageContext.request.contextPath}/user/all?pageNum=${pageInfo.pageNum+1}&pageSize=${pageInfo.pageSize}">下一页</a></li>
-								<li><a href="${pageContext.request.contextPath}/user/all?pageNum=${pageInfo.pages}&pageSize=${pageInfo.pageSize}" aria-label="Next">尾页</a></li>
+								<li><a href="${pageContext.request.contextPath}/syslog/all?pageNum=${pageInfo.pageNum+1}&pageSize=${pageInfo.pageSize}">下一页</a></li>
+								<li><a href="${pageContext.request.contextPath}/syslog/all?pageNum=${pageInfo.pages}&pageSize=${pageInfo.pageSize}" aria-label="Next">尾页</a></li>
 							</ul>
 						</div>--%>
 						<div class="dataTables_paginate paging_simple_numbers" id="example2_paginate">
 							<ul class="pagination">
 								<li>
-									<a href="${pageContext.request.contextPath}/user/all?pageNum=${pageInfo.firstPage}&pageSize=${pageInfo.pageSize}" aria-label="Previous">首页</a>
+									<a href="${pageContext.request.contextPath}/syslog/all?pageNum=${pageInfo.firstPage}&pageSize=${pageInfo.pageSize}" aria-label="Previous">首页</a>
 								</li>
 								<li class="paginate_button previous" id="example2_previous">
-									<a href="${pageContext.request.contextPath}/user/all?pageNum=${pageInfo.pageNum-1}&pageSize=${pageInfo.pageSize}" aria-controls="example2" data-dt-idx="0" tabindex="0">
+									<a href="${pageContext.request.contextPath}/syslog/all?pageNum=${pageInfo.pageNum-1}&pageSize=${pageInfo.pageSize}" aria-controls="example2" data-dt-idx="0" tabindex="0">
 										上一页
 									</a>
 								</li>
 								<c:forEach begin="${pageInfo.firstPage}" end="${pageInfo.pages}" var="pageNum">
 									<li class="${pageInfo.pageNum == pageNum ?'paginate_button active':''}"><%--paginate_button active--%>
-										<a href="${pageContext.request.contextPath}/user/all?pageNum=${pageNum}&pageSize=${pageInfo.pageSize}" aria-controls="example2" data-dt-idx="1" tabindex="0">
+										<a href="${pageContext.request.contextPath}/syslog/all?pageNum=${pageNum}&pageSize=${pageInfo.pageSize}" aria-controls="example2" data-dt-idx="1" tabindex="0">
 											${pageNum}
 										</a>
 									</li>
 								</c:forEach>
 								<li class="paginate_button next" id="example2_next">
-									<a href="${pageContext.request.contextPath}/user/all?pageNum=${pageInfo.pageNum+1}&pageSize=${pageInfo.pageSize}" aria-controls="example2" data-dt-idx="7" tabindex="0">
+									<a href="${pageContext.request.contextPath}/syslog/all?pageNum=${pageInfo.pageNum+1}&pageSize=${pageInfo.pageSize}" aria-controls="example2" data-dt-idx="7" tabindex="0">
 										下一页
 									</a>
 								</li>
-								<li><a href="${pageContext.request.contextPath}/user/all?pageNum=${pageInfo.pages}&pageSize=${pageInfo.pageSize}" aria-label="Next">尾页</a></li>
+								<li><a href="${pageContext.request.contextPath}/syslog/all?pageNum=${pageInfo.pages}&pageSize=${pageInfo.pageSize}" aria-label="Next">尾页</a></li>
 							</ul>
 						</div>
 
@@ -488,7 +491,7 @@
 		//选择页面显示的记录数
 		$("#pagechange").change(function () {
 			var currentSize = $(this).val();
-			location.href = '${pageContext.request.contextPath}/user/all?pageNum=${pageInfo.pageNum}&pageSize='+currentSize;
+			location.href = '${pageContext.request.contextPath}/syslog/all?pageNum=${pageInfo.pageNum}&pageSize='+currentSize;
 		});
 
 		// 设置激活菜单

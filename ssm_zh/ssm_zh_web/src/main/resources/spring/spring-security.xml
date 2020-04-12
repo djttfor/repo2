@@ -50,8 +50,9 @@
         </security:authentication-provider>
     </security:authentication-manager>
 
-    <!-- 配置加密类 -->
-    <bean id="passwordEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
+    <security:global-method-security jsr250-annotations="enabled"/>
+
+
 
     <!-- 提供了入门的方式，在内存中存入用户名和密码
     <security:authentication-manager>

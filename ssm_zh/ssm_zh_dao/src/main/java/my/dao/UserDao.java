@@ -1,5 +1,6 @@
 package my.dao;
 
+import my.domain.Role;
 import my.domain.UserInfo;
 import org.apache.ibatis.annotations.*;
 
@@ -33,4 +34,20 @@ public interface UserDao {
 
     @Select ("select username from users where username = #{username}")
     String checkUsernameExist(String username);
+
+    @Select("select * from users where id in (select users_id from role_users where role_id = #{roleId})")
+    List<UserInfo> findUserByRoleId(String roleId)throws Exception;
+
+    @Select("select * from role where id not in (select role_id from role_users where users_id = #{userId})")
+    @Results(
+            id = "frsbu",value = {
+                    @Result(id = true,property = "id",column = "id"),
+            @Result(property = "roleName",column = "role_name"),
+            @Result(property = "roleDesc",column = "role_desc")
+    }
+    )
+    List<Role> findRolesByUser(String userId);
+
+    @Insert("insert into role_users(role_id,users_id) values(#{roleId},#{usersId})")
+    int addRoleToUser(@Param("usersId") String userId, @Param("roleId") String roleId);
 }

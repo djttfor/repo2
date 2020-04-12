@@ -1,5 +1,6 @@
 package my.service;
 
+import my.domain.Role;
 import my.domain.UserInfo;
 import org.springframework.security.core.userdetails.UserDetailsService;
 
@@ -14,4 +15,12 @@ public interface UserService extends UserDetailsService {
 
     String checkUsernameExist(String username);
 
+    /**
+     * 查找用户未拥有的角色
+     * @param userId uid
+     * @return List<Role>
+     */
+    List<Role> findRolesByUser(String userId);
+
+    int addRoleToUser(String userId, String[] ids);
 }

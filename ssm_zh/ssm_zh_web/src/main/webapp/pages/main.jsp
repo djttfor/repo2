@@ -12,7 +12,7 @@
 
 
 
-    <title>数据 - AdminLTE2定制版</title>
+    <title>The deep dark Fantasy</title>
     <meta name="description" content="AdminLTE2定制版">
     <meta name="keywords" content="AdminLTE2定制版">
 

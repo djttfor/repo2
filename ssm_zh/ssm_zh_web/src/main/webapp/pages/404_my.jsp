@@ -155,15 +155,13 @@
         <!-- Main content -->
         <section class="content">
             <div class="error-page">
-                <h2 class="headline text-yellow"> 404</h2>
+               <%-- <h2 class="headline text-yellow"> 404</h2>--%>
 
                 <div class="error-content">
-                    <h3><i class="fa fa-warning text-yellow"></i>出错了</h3>
+                    <h4><i class="fa fa-warning text-yellow"></i>出错了</h4>
+                    <p><i class="fa fa-warning text-red">${message}</i></p>
                     <p>
-                        ${message}
-                    </p>
-                    <p>
-                        你可以返回上一步<button type="button" class="btn bg-maroon" onclick="history.back(-1);">返回</button>
+                        你可以返回上一步 <button type="button" class="btn btn-block btn-danger btn-lg" onclick="history.back(-1);">返回上一步</button>
                     </p>
 
                     <%--<form class="search-form">

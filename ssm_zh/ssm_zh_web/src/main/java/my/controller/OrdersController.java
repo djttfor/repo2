@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.annotation.security.RolesAllowed;
 import java.util.List;
 
 @Controller
@@ -17,9 +18,10 @@ public class OrdersController {
     @Autowired
     OrdersService ordersService;
     @RequestMapping("/all")
+    @RolesAllowed("ADMIN")
     /**
     * Description:
-    * <分页查询>
+    * <分页查询订单>
     * @param pageNum 当前页
      * @param pageSize 当前页记录数
     * @return: org.springframework.web.servlet.ModelAndView
@@ -30,11 +32,12 @@ public class OrdersController {
                                 @RequestParam(name = "pageSize",required = true,defaultValue = "4") int pageSize) throws Exception {
         ModelAndView mv = new ModelAndView();
         List<Orders> all = ordersService.findAll(pageNum,pageSize);
-        PageInfo pageInfo = new PageInfo(all);
+        PageInfo<Orders> pageInfo = new PageInfo<Orders>(all);
         mv.addObject("pageInfo", pageInfo);
         mv.setViewName("order-list");
         return mv;
     }
+    @RolesAllowed("ADMIN")
     @RequestMapping("/show")
     public ModelAndView findOrdersById(@RequestParam(name = "id",required = true) String id) throws Exception {
         ModelAndView mv = new ModelAndView();
