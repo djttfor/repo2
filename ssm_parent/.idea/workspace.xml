@@ -7,58 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4329f431-d028-4f1a-8f72-8c4094173d5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_dao/src/main/java/my/dao/SysDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_domain/src/main/java/my/domain/Syslog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_service/src/main/java/my/service/PermissionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_service/src/main/java/my/service/RoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_service/src/main/java/my/service/SysService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_service/src/main/java/my/service/impl/PermissionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_service/src/main/java/my/service/impl/RoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_service/src/main/java/my/service/impl/SysServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_utils/src/main/java/my/util/controller/utils/MyUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/java/my/aop/LogAop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/java/my/controller/PermissionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/java/my/controller/RoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/java/my/controller/SyslogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/test/my/dao/SysDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/test/my/hehe/Hehe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/test/my/service/PermissionServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/test/my/service/RoleServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/webapp/pages/permission_add.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/webapp/pages/permission_list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/webapp/pages/permission_show.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/webapp/pages/role-permission-add.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/webapp/pages/role_add.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/webapp/pages/role_list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/webapp/pages/role_show.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/webapp/pages/syslog-list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/webapp/pages/user-role-add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/03df008d-d019-4172-a4fc-0f454bee1e23.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/03df008d-d019-4172-a4fc-0f454bee1e23.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/03df008d-d019-4172-a4fc-0f454bee1e23/storage_v2/_src_/schema/ssh_zh.xZjCyg.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/03df008d-d019-4172-a4fc-0f454bee1e23/storage_v2/_src_/schema/ssh_zh.xZjCyg.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm_zh/.idea/dataSources/5242b121-c1a1-45fc-8928-cf011e474f60.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm_zh/.idea/dataSources/5242b121-c1a1-45fc-8928-cf011e474f60.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm_zh/.idea/dataSources/5242b121-c1a1-45fc-8928-cf011e474f60/storage_v2/_src_/schema/ssh_zh.xZjCyg.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm_zh/.idea/dataSources/5242b121-c1a1-45fc-8928-cf011e474f60/storage_v2/_src_/schema/ssh_zh.xZjCyg.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm_zh/ssm_zh_dao/src/main/java/my/dao/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm_zh/ssm_zh_dao/src/main/java/my/dao/PermissionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_dao/src/main/java/my/dao/PermissionDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm_zh/ssm_zh_dao/src/main/java/my/dao/RoleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_dao/src/main/java/my/dao/RoleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm_zh/ssm_zh_dao/src/main/java/my/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_dao/src/main/java/my/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm_zh/ssm_zh_service/src/main/java/my/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_service/src/main/java/my/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm_zh/ssm_zh_service/src/main/java/my/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_service/src/main/java/my/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm_zh/ssm_zh_utils/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_utils/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/java/my/controller/OrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/java/my/controller/OrdersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/java/my/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/java/my/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/resources/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/resources/spring/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/resources/spring/spring-security.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/resources/spring/spring-security.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/resources/spring/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/resources/spring/springmvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/test/my/dao/PermissionDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/test/my/dao/PermissionDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/test/my/dao/RoleDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/test/my/dao/RoleDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/test/my/dao/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/test/my/dao/UserDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/webapp/pages/404_my.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/webapp/pages/404_my.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/webapp/pages/aside_my.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/webapp/pages/aside_my.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/webapp/pages/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/webapp/pages/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/webapp/pages/user_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/webapp/pages/user_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/webapp/pages/user_show.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm_zh/ssm_zh_web/src/main/webapp/pages/user_show.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -105,47 +54,21 @@
         <item name="ssh_zh: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@192.168.8.128" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="ssh_zh: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="users: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/03df008d-d019-4172-a4fc-0f454bee1e23/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3450">
-              <caret line="115" selection-start-line="115" selection-end-line="115" />
+            <state relative-caret-position="147">
+              <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="das://03df008d-d019-4172-a4fc-0f454bee1e23/schema/ssh_zh/table/permission">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://03df008d-d019-4172-a4fc-0f454bee1e23/schema/ssh_zh/table/users">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="das://03df008d-d019-4172-a4fc-0f454bee1e23/schema/ssh_zh/table/product">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
@@ -155,25 +78,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="das://03df008d-d019-4172-a4fc-0f454bee1e23/schema/ssh_zh/table/role">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/03df008d-d019-4172-a4fc-0f454bee1e23/console_2.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://03df008d-d019-4172-a4fc-0f454bee1e23/schema/ssh_zh/table/sysLog">
+        <entry file="das://03df008d-d019-4172-a4fc-0f454bee1e23/schema/ssh_zh/table/orders">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -297,7 +202,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586054881316" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="database.console.LAST_STATE" value="false" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/ssm_spring_service/src/test" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -305,7 +210,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -546,7 +451,7 @@
       <workItem from="1586148269276" duration="2577000" />
       <workItem from="1586154744113" duration="16637000" />
       <workItem from="1586578289311" duration="3738000" />
-      <workItem from="1586669113487" duration="5986000" />
+      <workItem from="1586669113487" duration="9999000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交">
       <created>1583654713603</created>
@@ -605,7 +510,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165772000" />
+    <option name="totallyTimeSpent" value="169785000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -618,7 +523,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.20308311" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -644,7 +548,7 @@
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.32658958" />
       <window_info anchor="bottom" id="Application Servers" order="15" weight="0.32900432" />
-      <window_info anchor="bottom" id="Database Console" order="16" sideWeight="0.49932975" weight="0.43208092" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="16" sideWeight="0.49932975" visible="true" weight="0.41907513" />
       <window_info anchor="bottom" id="SQL Generator" order="17" weight="0.4118497" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -652,7 +556,7 @@
       <window_info anchor="right" id="Maven" order="3" weight="0.3297587" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info active="true" anchor="right" id="Database" order="6" visible="true" weight="0.2580429" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.2580429" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
@@ -943,13 +847,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://03df008d-d019-4172-a4fc-0f454bee1e23/schema/ssh_zh/table/orders">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://03df008d-d019-4172-a4fc-0f454bee1e23/schema/ssh_zh/table/persistent_logins">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -972,13 +869,6 @@
       </provider>
     </entry>
     <entry file="dbSrc:///faddadce/03df008d-d019-4172-a4fc-0f454bee1e23/schema/ssh_zh/table/orders/trigger/tri_auto_uuid_orders.sql" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/03df008d-d019-4172-a4fc-0f454bee1e23/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3450">
-          <caret line="115" selection-start-line="115" selection-end-line="115" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/03df008d-d019-4172-a4fc-0f454bee1e23/console_2.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -1014,10 +904,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://03df008d-d019-4172-a4fc-0f454bee1e23/schema/ssh_zh/table/orders">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="das://03df008d-d019-4172-a4fc-0f454bee1e23/schema/ssh_zh/table/product">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/03df008d-d019-4172-a4fc-0f454bee1e23/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
         </state>
       </provider>
     </entry>
