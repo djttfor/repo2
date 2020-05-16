@@ -23,7 +23,7 @@ public class SyslogController {
     @RequestMapping("/all")
     @Transactional(readOnly = false)
     public ModelAndView findAll(@RequestParam(name = "pageNum",required = true,defaultValue = "1") int pageNum,
-                                @RequestParam(name = "pageSize",required = true,defaultValue = "4") int pageSize){
+                                @RequestParam(name = "pageSize",required = true,defaultValue = "20") int pageSize){
         List<Syslog> syslogList = sysService.findAll(pageNum,pageSize);
         return myUtil.findAllPaging(syslogList, "syslog-list");
     }

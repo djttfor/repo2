@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>v-on:mouseover</title>
+		<style>
+			#app1 {
+				background-color: red;
+				height: 300px;
+				width: 300px;
+			}
+		</style>
+		<script src="js/vuejs-2.5.16.js"></script>
+	</head>
+
+	<body>
+		<div id="app1">
+			<div @mouseover="fun1" id="div">
+
+				<textarea @mouseover.stop="fun2($event)">这是一个文件域</textarea>
+			</div>
+		</div>
+
+
+	</body>
+
+	<script>
+		//view model
+		new Vue({
+			el:"#app1",
+			methods:{
+				fun1:function () {
+					alert("div");
+				},
+				fun2:function (event) {
+					alert("文本域");
+					//event.stopPropagation();
+				}
+			}
+		})
+	</script>
+</html>

@@ -1,0 +1,8 @@
+my\dao\TravellerDao.class
+my\dao\ProductDao.class
+my\dao\OrdersDao.class
+my\dao\MemberDao.class
+my\dao\SysDao.class
+my\dao\PermissionDao.class
+my\dao\RoleDao.class
+my\dao\UserDao.class

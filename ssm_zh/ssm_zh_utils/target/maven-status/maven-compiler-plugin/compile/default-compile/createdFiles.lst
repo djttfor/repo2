@@ -1,0 +1,6 @@
+my\util\PasswordEncoderUtil.class
+my\util\exception\MyExceptionResolver.class
+my\util\controller\utils\MyUtil.class
+my\util\exception\MyException.class
+my\util\converter\impl\StringToDateConverter.class
+my\util\date\MyDateFormat.class

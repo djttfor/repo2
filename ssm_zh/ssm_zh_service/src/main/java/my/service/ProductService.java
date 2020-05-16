@@ -28,4 +28,8 @@ public interface ProductService {
     int saveProduct(Product product);
 
     Product findById(String id)throws Exception;
+
+    int deleteProduct(String id)throws Exception;
+
+    int delSelected(String pids) throws Exception;
 }

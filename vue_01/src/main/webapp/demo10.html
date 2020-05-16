@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>v-for遍历数组</title>
+		<script src="js/vuejs-2.5.16.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<ul v-for="v1,index in o1">
+				<li>
+					{{index}}:{{v1.name}}:{{v1.age}}::::::{{v1.account[0].a}}:::::{{v1.account[1].a}}
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script>
+		//view model
+		new Vue({
+			el:'#app',
+			data:{
+				o1:[
+					{name:'张三',age:19,account:[{a:'10086'},{a:'10010'}]},
+					{name:'李四',age:20,account:[{a:'10087'},{a:'10011'}]},
+					{name:'王五',age:21,account:[{a:'10088'},{a:'10012'}]}
+				]
+			}
+		})
+	</script>
+</html>

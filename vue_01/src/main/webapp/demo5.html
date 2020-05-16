@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>v-on:事件修饰符</title>
+
+		<script src="js/vuejs-2.5.16.js"></script>
+	</head>
+
+	<body>
+		<div id="app">
+			<form @submit.prevent="fun1()" action="http://www.itcast.cn" method="get">
+				<input type="submit" value="提交"/>
+			</form>
+
+		</div>
+	</body>
+	<script>
+		//view model
+		new Vue({
+			el:"#app",
+			methods:{
+				fun1:function () {
+					alert("阻止前往黑马网");
+				},
+				fun2:function () {
+					alert("呵呵");
+				}
+			}
+		})
+		
+		
+	</script>
+
+</html>

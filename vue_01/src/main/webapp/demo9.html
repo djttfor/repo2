@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>v-text与v-html在v-bind上的使用</title>
+		<script src="js/vuejs-2.5.16.js"></script>
+	</head>
+	<body>
+		<div id="app"><!--v-model相当于给绑定了一个id-->
+			姓名:<input type="text" id="username" v-model="user.username"><br>
+			密码:<input type="password" id="password" v-model="user.password"><br>
+			<input type="button" @click="fun" value="获取"><br>
+			姓名:<input type="text" id="hehe1" v-model="hehe1"><br>
+			密码:<input type="password" id="hehe2" v-model="hehe2"><br>
+			<input type="button" @click="fun2" value="获取">
+		</div>
+
+	</body>
+	<script>
+		//view model
+		new Vue({
+			el:'#app', //表示当前vue对象接管了div区域
+		    data:{
+				user:{username:"",password:""},
+				hehe1:'',
+				hehe2:''
+				},
+			methods:{
+				fun:function(){
+					alert(this.user.username+" "+this.user.password);
+					this.user.username="tom"; this.user.password="11111111";
+				},
+				fun2:function () {
+					this.hehe1="jerry";
+					this.hehe2="12345";
+				}
+			}
+		});
+	</script>
+</html>

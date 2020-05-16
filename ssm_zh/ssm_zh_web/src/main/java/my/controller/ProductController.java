@@ -89,10 +89,19 @@ public class ProductController {
      * 删除产品
      * @return
      */
-    @RequestMapping("/del")
-    public String deleteProduct(){
-        System.out.println("信息:");
-        return null;
+    @RequestMapping("/delete")
+    public String deleteProduct(@RequestParam(name = "id",required = true) String id) throws Exception {
+        productService.deleteProduct(id);
+        return "redirect:all";
+    }
+    @RequestMapping("/delAll")
+    public String delAll(@RequestParam(name = "pids",required = true)String pids) throws Exception {
+        String[] ids = pids.split("@");
+        for (String id : ids) {
+            System.out.println(id);
+        }
+        productService.delSelected(pids);
+        return "redirect:all";
     }
 
 

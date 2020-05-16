@@ -1,0 +1,22 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlFormInputWithoutLabel" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="myValues">
+        <value>
+          <list size="6">
+            <item index="0" class="java.lang.String" itemvalue="v-on:click" />
+            <item index="1" class="java.lang.String" itemvalue="@submit.prevent" />
+            <item index="2" class="java.lang.String" itemvalue="@click" />
+            <item index="3" class="java.lang.String" itemvalue="@click.stop" />
+            <item index="4" class="java.lang.String" itemvalue="@mouseover" />
+            <item index="5" class="java.lang.String" itemvalue="@mouseover.stop" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="XmlUnboundNsPrefix" enabled="false" level="WARNING" enabled_by_default="false" />
+  </profile>
+</component>

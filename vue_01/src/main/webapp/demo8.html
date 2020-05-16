@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>v-model</title>
+		<script src="js/vuejs-2.5.16.js"></script>
+	</head>
+
+	<body>
+		<div id="app">
+			<font size="15px" v-bind:color="color1">heheh</font>
+			<font size="16px" :color="color2"> 呵呵</font>
+		</div>
+	</body>
+	<script>
+		//view model
+		new Vue({
+			el:'#app',
+			data: {
+				message: "vue点击事件",
+				color1:'black',
+				color2:'#456789'
+			},
+			methods:{
+				fun1:function (msg) {
+					this.message = msg;
+				}
+			}
+		});
+	</script>
+
+</html>

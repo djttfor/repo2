@@ -1,0 +1,7 @@
+my\controller\PermissionController.class
+my\controller\SyslogController.class
+my\controller\UserController.class
+my\controller\ProductController.class
+my\controller\RoleController.class
+my\aop\LogAop.class
+my\controller\OrdersController.class

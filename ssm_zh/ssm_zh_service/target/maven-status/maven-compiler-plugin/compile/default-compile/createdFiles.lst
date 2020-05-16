@@ -1,0 +1,12 @@
+my\service\impl\OrdersServiceImpl.class
+my\service\impl\PermissionServiceImpl.class
+my\service\impl\UserServiceImpl.class
+my\service\impl\ProductServiceImpl.class
+my\service\OrdersService.class
+my\service\SysService.class
+my\service\RoleService.class
+my\service\ProductService.class
+my\service\impl\SysServiceImpl.class
+my\service\PermissionService.class
+my\service\impl\RoleServiceImpl.class
+my\service\UserService.class
