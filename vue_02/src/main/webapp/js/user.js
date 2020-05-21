@@ -1,7 +1,7 @@
 var vue = new Vue({
     el: "#app",
     data: {
-        user: {id:"",username:"aaa",password:"",age:"",sex:"",email:""},
+        user: {id:"",username:"",password:""},
         userList: []
     },
     methods: {
@@ -16,7 +16,7 @@ var vue = new Vue({
         },
         findById: function (userid) {
             var _this = this;
-            axios.get("/vuejsDemo/user/findById", {
+            axios.get("/vue_02/user/findById", {
                 params: {
                     id: userid
                 }
@@ -29,7 +29,7 @@ var vue = new Vue({
         },
         update: function (user) {
             var _this = this;
-            axios.post("/vuejsDemo/user/update",_this.user).then(function (response) {
+            axios.post("/vue_02/user/update",_this.user).then(function (response) {
                 _this.findAll();
             }).catch(function (err) {
             });

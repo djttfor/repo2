@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:ssm_parent" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e8d6fd59-ad2d-4d3b-83c8-15f399b85a28" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/common/src/main/java/com/pojo/Brand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/common/src/main/java/com/service/BrandService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/common/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/common/target/classes/com/pojo/Brand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/common/target/classes/com/service/BrandService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/common/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/common/target/common-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/common/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/consumer/consumer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/consumer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/consumer/src/main/java/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/consumer/src/main/resources/consumer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/consumer/target/classes/Consumer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/consumer/target/classes/consumer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/provider.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/src/main/java/Provider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/src/main/java/com/dao/BrandMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/src/main/java/com/service/impl/BrandServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/src/main/resources/applicationContext-dao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/src/main/resources/provider.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/src/test/java/com/service/impl/BrandServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/target/classes/Provider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/target/classes/applicationContext-dao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/target/classes/com/dao/BrandMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/target/classes/com/service/impl/BrandServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/target/classes/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/target/classes/provider.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/target/surefire-reports/TEST-com.service.impl.BrandServiceImplTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/target/surefire-reports/com.service.impl.BrandServiceImplTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/target/test-classes/com/service/impl/BrandServiceImplTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/ex/pojo/Brand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/ex/service/BrandService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/ex/service/DemoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/ex/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/ex/pojo/Brand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/ex/service/BrandService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/ex/service/DemoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/ex/service/ProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/common-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/consumer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/ex/c/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/resources/consumer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/test/java/com/ex/service/test/BrandServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/target/classes/com/ex/c/Consumer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/target/classes/consumer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/target/consumer-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo_02.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/provider.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/ex/dao/BrandMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/ex/dao/ProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/ex/p/Provider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/ex/service/impl/BrandServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/ex/service/impl/DemoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/ex/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/src/main/resources/applicationContext-dao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/src/main/resources/applicationContext-provider.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/src/test/java/com/ex/service/test/BrandServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/target/classes/applicationContext-dao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/target/classes/applicationContext-provider.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/target/classes/com/ex/dao/BrandMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/target/classes/com/ex/dao/ProductMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/target/classes/com/ex/p/Provider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/target/classes/com/ex/service/impl/BrandServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/target/classes/com/ex/service/impl/DemoServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/target/classes/com/ex/service/impl/ProductServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/target/classes/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/target/provider-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue_02/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue_02/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../qc_parent/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo_01/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../qc_parent/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../qc_parent/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo_01/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../qc_parent/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo_01/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../qc_parent/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo_01/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../qc_parent/qc_common/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../qc_parent/qc_common/qc_common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo_01/dubbo_01.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm_zh/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm_zh/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue_02/src/main/java/com/ex/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/src/main/java/com/ex/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue_02/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue_02/src/main/test/com/ex/dao/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/src/main/test/com/ex/dao/UserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue_02/src/main/webapp/js/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/src/main/webapp/js/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue_02/src/main/webapp/page/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/src/main/webapp/page/user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue_02/target/classes/com/ex/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/target/classes/com/ex/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue_02/target/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/target/classes/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue_02/target/test-classes/com/ex/dao/UserDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/target/test-classes/com/ex/dao/UserDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue_02/target/vue_02-1.0-SNAPSHOT/WEB-INF/classes/com/ex/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/target/vue_02-1.0-SNAPSHOT/WEB-INF/classes/com/ex/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue_02/target/vue_02-1.0-SNAPSHOT/WEB-INF/classes/com/ex/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/target/vue_02-1.0-SNAPSHOT/WEB-INF/classes/com/ex/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue_02/target/vue_02-1.0-SNAPSHOT/WEB-INF/classes/com/ex/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/target/vue_02-1.0-SNAPSHOT/WEB-INF/classes/com/ex/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue_02/target/vue_02-1.0-SNAPSHOT/WEB-INF/classes/com/ex/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/target/vue_02-1.0-SNAPSHOT/WEB-INF/classes/com/ex/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue_02/target/vue_02-1.0-SNAPSHOT/WEB-INF/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/target/vue_02-1.0-SNAPSHOT/WEB-INF/classes/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue_02/target/vue_02-1.0-SNAPSHOT/js/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/target/vue_02-1.0-SNAPSHOT/js/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue_02/target/vue_02-1.0-SNAPSHOT/page/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/target/vue_02-1.0-SNAPSHOT/page/user.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../maven/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="F:\maven\apache-maven-3.6.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1c7s0ukou4BUjcqIugXoTKGKFEr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/consumer/src/main/resources" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.508046" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Java\dubbo_02\consumer\src\main" />
+      <recent name="F:\Java\dubbo_02\provider\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ex.pojo" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Java\dubbo_02\consumer\src\main\resources" />
+      <recent name="F:\Java\dubbo_02\provider\src\main\resources" />
+      <recent name="F:\Java\dubbo_02\common\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Provider">
+    <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ex.c.Consumer" />
+      <module name="consumer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ex.p.Demo1" />
+      <module name="provider" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Provider" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ex.p.Provider" />
+      <module name="provider" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BrandServiceTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="provider" />
+      <option name="PACKAGE_NAME" value="com.ex.service.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ex.service.test.BrandServiceTest" />
+      <option name="METHOD_NAME" value="findAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BrandServiceTest.findBrandByProductId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="provider" />
+      <option name="PACKAGE_NAME" value="com.ex.service.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ex.service.test.BrandServiceTest" />
+      <option name="METHOD_NAME" value="findBrandByProductId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Consumer" />
+        <item itemvalue="Application.Provider" />
+        <item itemvalue="JUnit.BrandServiceTest.findAll" />
+        <item itemvalue="JUnit.BrandServiceTest.findBrandByProductId" />
+        <item itemvalue="Application.Demo1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e8d6fd59-ad2d-4d3b-83c8-15f399b85a28" name="Default Changelist" comment="" />
+      <created>1589890746552</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589890746552</updated>
+      <workItem from="1589890750291" duration="24415000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="249" y="0" key="#Project_Structure" timestamp="1590064400277">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.834@0.0.1536.834" timestamp="1590064400277" />
+    <state x="499" y="172" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1589892439760">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="499" y="172" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.834@0.0.1536.834" timestamp="1589892439760" />
+    <state x="447" y="217" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589901400301">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="447" y="217" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1589901400301" />
+    <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser" timestamp="1590064488705">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1590064488705" />
+    <state x="499" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589904077475">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="499" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1589904077475" />
+    <state x="524" y="118" key="#xdebugger.evaluate" timestamp="1589905843887">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="524" y="118" key="#xdebugger.evaluate/0.0.1536.834@0.0.1536.834" timestamp="1589905843887" />
+    <state width="676" height="466" key="DebuggerActiveHint" timestamp="1589905332856">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="676" height="466" key="DebuggerActiveHint/0.0.1536.834@0.0.1536.834" timestamp="1589905332856" />
+    <state width="1493" height="343" key="GridCell.Tab.0.bottom" timestamp="1590074370870">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="343" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1590074370870" />
+    <state width="1493" height="343" key="GridCell.Tab.0.center" timestamp="1590074370870">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="343" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1590074370870" />
+    <state width="1493" height="343" key="GridCell.Tab.0.left" timestamp="1590074370870">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="343" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1590074370870" />
+    <state width="1493" height="343" key="GridCell.Tab.0.right" timestamp="1590074370870">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="343" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1590074370870" />
+    <state width="1493" height="278" key="GridCell.Tab.1.bottom" timestamp="1590072101393">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="278" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1590072101393" />
+    <state width="1493" height="278" key="GridCell.Tab.1.center" timestamp="1590072101393">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="278" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1590072101393" />
+    <state width="1493" height="278" key="GridCell.Tab.1.left" timestamp="1590072101393">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="278" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1590072101393" />
+    <state width="1493" height="278" key="GridCell.Tab.1.right" timestamp="1590072101393">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="278" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1590072101393" />
+    <state x="270" y="0" key="SettingsEditor" timestamp="1590064434224">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="270" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1590064434224" />
+    <state x="178" y="77" key="new project wizard" timestamp="1589891520844">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="178" y="77" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1589891520844" />
+  </component>
+</project>

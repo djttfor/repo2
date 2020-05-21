@@ -4,6 +4,7 @@ import com.ex.domain.User;
 import com.ex.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
@@ -28,10 +29,11 @@ public class UserController {
         return userService.findAllUser();
     }
     @RequestMapping("/update")
-    public @ResponseBody Integer updateUser(User user){
+    public @ResponseBody Integer updateUser(@RequestBody User user){
+        System.out.println(user);
         return userService.updateUser(user);
     }
-    @RequestMapping("/show")
+    @RequestMapping("/findById")
     public @ResponseBody User findUserById(Integer id){
         return userService.findUserById(id);
     }

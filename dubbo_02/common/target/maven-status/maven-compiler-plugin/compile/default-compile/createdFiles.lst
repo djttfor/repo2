@@ -1,0 +1,4 @@
+com\ex\service\ProductService.class
+com\ex\service\BrandService.class
+com\ex\service\DemoService.class
+com\ex\pojo\Brand.class

@@ -26,5 +26,10 @@ public class UserDaoTest {
 
     @Test
     public void updateUser() {
+        User user =new User();
+        user.setId("1");
+        user.setUsername("今晚打老虎");
+        user.setPassword("1223");
+        userDao.updateUser(user);
     }
 }

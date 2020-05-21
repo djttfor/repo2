@@ -1,0 +1,6 @@
+com\ex\service\impl\BrandServiceImpl.class
+com\ex\dao\ProductMapper.class
+com\ex\service\impl\ProductServiceImpl.class
+com\ex\service\impl\DemoServiceImpl.class
+com\ex\dao\BrandMapper.class
+com\ex\p\Provider.class

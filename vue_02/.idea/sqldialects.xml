@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://G:/某商城/青橙商城-版本一/资料/资料/建表语句/business.sql" dialect="MySQL" />
+    <file url="file://G:/某商城/青橙商城-版本一/资料/资料/建表语句/config.sql" dialect="MySQL" />
+    <file url="file://G:/某商城/青橙商城-版本一/资料/资料/建表语句/goods.sql" dialect="MySQL" />
+    <file url="file://G:/某商城/青橙商城-版本一/资料/资料/建表语句/order.sql" dialect="MySQL" />
+    <file url="file://G:/某商城/青橙商城-版本一/资料/资料/建表语句/system.sql" dialect="MySQL" />
+    <file url="file://G:/某商城/青橙商城-版本一/资料/资料/建表语句/user.sql" dialect="MySQL" />
+  </component>
+</project>
