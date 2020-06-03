@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品列表</title>
+    <link rel="stylesheet" href="../css/elementui.css">
+    <style>
+        .avatar-uploader .el-upload {
+            border: 1px dashed #d9d9d9;
+            border-radius: 6px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .avatar-uploader .el-upload:hover {
+            border-color: #409EFF;
+        }
+        .avatar-uploader-icon {
+            font-size: 28px;
+            color: #8c939d;
+            width: 178px;
+            height: 178px;
+            line-height: 178px;
+            text-align: center;
+        }
+        .avatar {
+            width: 178px;
+            height: 178px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <div>
+        <el-form :inline="true">
+            <el-form-item label="品牌名称">
+                <el-input  placeholder="品牌名称" v-model="searchMap.name"></el-input>
+            </el-form-item>
+            <el-form-item label="品牌首字母">
+                <el-input placeholder="品牌首字母" v-model="searchMap.letter"></el-input>
+            </el-form-item>
+            <el-button type="primary" @click="fetchData">查询</el-button>
+            <el-button type="primary" @click="formVisible = true">新增</el-button>
+        </el-form>
+    </div>
+<!--新增品牌-->
+    <el-dialog
+            title="新增品牌"
+            :visible.sync="formVisible"
+            width="30%"
+            >
+        <el-form >
+            <el-form-item label="品牌名称" label-width="100px">
+                <el-input  placeholder="品牌名称" v-model="brand.name"></el-input>
+            </el-form-item>
+            <el-form-item label="品牌首字母" label-width="100px" >
+                <el-input placeholder="品牌首字母" v-model="brand.letter"></el-input>
+            </el-form-item>
+            <el-form-item label="图片上传" label-width="100px">
+                <el-upload
+                        class="avatar-uploader"
+                        action="/upload/oss"
+                        :show-file-list="false"
+                        :on-success="handleAvatarSuccess"
+                        :before-upload="beforeAvatarUpload">
+                    <img v-if="imageUrl" :src="imageUrl" class="avatar">
+                    <i v-else class="el-icon-plus avatar-uploader-icon"></i>
+                </el-upload>
+            </el-form-item>
+
+            <el-form-item label="排序" label-width="100px">
+                <el-input placeholder="排序" v-model="brand.seq"></el-input>
+            </el-form-item>
+        </el-form>
+        <span slot="footer" class="dialog-footer">
+        <el-button @click="formVisible = false">取 消</el-button>
+         <el-button type="primary" @click="saveBrand">增 加</el-button>
+        </span>
+    </el-dialog>
+   <!--编辑品牌-->
+    <el-dialog
+            title="编辑品牌"
+            :visible.sync="updateFormVisible"
+            width="30%"
+            >
+        <el-form >
+            <el-form-item label="品牌名称" label-width="100px">
+                <el-input  placeholder="品牌名称" v-model="brand.name"></el-input>
+            </el-form-item>
+            <el-form-item label="品牌首字母" label-width="100px" >
+                <el-input placeholder="品牌首字母" v-model="brand.letter"></el-input>
+            </el-form-item>
+            <el-form-item label="图片" label-width="100px">
+                <el-input placeholder="图片选择" v-model="brand.image"></el-input>
+            </el-form-item>
+            <el-form-item label="排序" label-width="100px">
+                <el-input placeholder="排序" v-model="brand.seq"></el-input>
+            </el-form-item>
+        </el-form>
+        <span slot="footer" class="dialog-footer">
+        <el-button @click="updateFormVisible = false">取 消</el-button>
+         <el-button type="primary" @click="updateBrand">确认修改</el-button>
+        </span>
+    </el-dialog>
+
+    <el-table
+            :data="tableData"
+            border
+            style="width: 100%">
+        <el-table-column
+                prop="id"
+                label="ID"
+                width="180">
+        </el-table-column>
+        <el-table-column
+                prop="name"
+                label="名称">
+        </el-table-column>
+        <el-table-column
+                prop="letter"
+                label="首字母"
+                width="180">
+        </el-table-column>
+        <el-table-column
+                prop="image"
+                label="图片"
+                width="180">
+            <template slot-scope="scope">
+                <img height="50px" width="100px" :src="scope.row.image">
+            </template>
+        </el-table-column>
+        <el-table-column
+                label="操作"
+                width="180">
+            <template slot-scope="scope">
+                <el-button type="primary" size="small" @click="editBrand(scope.row.id)">编辑</el-button>
+                <el-button type="primary" size="small" @click="deleteBrand(scope.row.id)">删除</el-button>
+            </template>
+        </el-table-column>
+    </el-table>
+<div >
+    <el-pagination
+            @size-change="fetchData"
+            @current-change="fetchData"
+            :current-page.sync="currentPage"
+            :page-sizes="[10, 20, 30, 40]"
+            :page-size.sync="size"
+            layout="total, sizes, prev, pager, next, jumper"
+            :total="total">
+    </el-pagination>
+</div>
+
+
+</div>
+<script src="../js/vue.js"></script>
+<script src="../js/elementui.js" ></script>
+<script src="../js/axios.js"></script>
+<script>
+    new Vue({
+        el :"#app",
+        data(){
+            return{
+                tableData:[],
+                currentPage:1,
+                size:10,
+                total:10,
+                searchMap:{},
+                formVisible:false,
+                brand:{},
+                updateFormVisible:false,
+                imageUrl:''
+            }
+        },
+        created(){
+            this.fetchData();
+        },
+        methods:{
+            fetchData() {
+                let requestStr =`/brand/findPage?page=${this.currentPage}&size=${this.size}`
+                let requestParam =`${this.searchMap.name!=null&&this.searchMap.name!==''?"&name="+this.searchMap.name:''}${this.searchMap.letter!=null&&this.searchMap.letter!==''?"&letter="+this.searchMap.letter:''}`
+                //alert(requestStr+requestParam)
+                axios.get(requestStr+requestParam).then( response=>{
+                    this.tableData= response.data.rows;
+                    this.total= response.data.total
+                })
+            },
+            saveBrand(){
+                this.brand.image = this.imageUrl;
+                axios.post(`/brand/addBrand`,this.brand).then(response=>{
+                    this.formVisible = false;
+                    this.fetchData();
+                })
+            },
+            editBrand(id){
+                axios.get(`/brand/findById?id=${id}`).then(
+                    response=>{
+                        this.updateFormVisible = true;
+                        this.brand = response.data;
+                        this.imageUrl = this.brand.image;
+                    }
+                )
+            },
+            updateBrand(){
+                axios.post(`/brand/updateBrand`,this.brand).then(
+                    response=>{
+                        this.updateFormVisible = false;
+                        this.fetchData();
+                    }
+                )
+            },
+            deleteBrand(id){
+                if(confirm("你确定要删除吗?")){
+                    axios.get(`/brand/deleteBrand?id=${id}`).then(
+                        response=>{
+                            this.$alert("删除成功","提示");
+                            this.fetchData();
+                        }
+                    )
+                }
+            },
+            handleAvatarSuccess(res,file) {
+                this.imageUrl = file.response;
+                alert(this.imageUrl)
+            },
+            beforeAvatarUpload(file) {
+                const isJPG = file.type === 'image/jpeg';
+                const isLt2M = file.size / 1024 / 1024 < 3;
+
+                if (!isJPG) {
+                    this.$message.error('上传头像图片只能是 JPG 格式!');
+                }
+                if (!isLt2M) {
+                    this.$message.error('上传头像图片大小不能超过 3MB!');
+                }
+                return isJPG && isLt2M;
+            }
+        }
+    })
+</script>
+
+</body>
+</html>

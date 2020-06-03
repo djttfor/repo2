@@ -40,139 +40,224 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8d6fd59-ad2d-4d3b-83c8-15f399b85a28" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/common/src/main/java/com/pojo/Brand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/common/src/main/java/com/service/BrandService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/common/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/common/target/classes/com/pojo/Brand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/common/target/classes/com/service/BrandService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/common/target/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/common/target/common-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/common/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/consumer/consumer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/consumer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/consumer/src/main/java/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/consumer/src/main/resources/consumer.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/consumer/target/classes/Consumer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/consumer/target/classes/consumer.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/provider.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/src/main/java/Provider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/src/main/java/com/dao/BrandMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/src/main/java/com/service/impl/BrandServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/src/main/resources/applicationContext-dao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/src/main/resources/provider.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/src/test/java/com/service/impl/BrandServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/target/classes/Provider.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/target/classes/applicationContext-dao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/target/classes/com/dao/BrandMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/target/classes/com/service/impl/BrandServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/target/classes/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/target/classes/provider.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/target/surefire-reports/TEST-com.service.impl.BrandServiceImplTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/target/surefire-reports/com.service.impl.BrandServiceImplTest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo_01/provider/target/test-classes/com/service/impl/BrandServiceImplTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/ex/pojo/Brand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/ex/service/BrandService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/ex/service/DemoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/ex/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/target/classes/com/ex/pojo/Brand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/target/classes/com/ex/service/BrandService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/target/classes/com/ex/service/DemoService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/target/classes/com/ex/service/ProductService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/target/common-1.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/consumer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/ex/c/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/resources/consumer.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/test/java/com/ex/service/test/BrandServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/target/classes/com/ex/c/Consumer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/target/classes/consumer.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/target/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/target/consumer-1.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo_02.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/provider.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/ex/dao/BrandMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/ex/dao/ProductMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/ex/p/Provider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/ex/service/impl/BrandServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/ex/service/impl/DemoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/ex/service/impl/ProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/src/main/resources/applicationContext-dao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/src/main/resources/applicationContext-provider.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/src/test/java/com/ex/service/test/BrandServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/classes/applicationContext-dao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/classes/applicationContext-provider.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/classes/com/ex/dao/BrandMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/classes/com/ex/dao/ProductMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/classes/com/ex/p/Provider.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/classes/com/ex/service/impl/BrandServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/classes/com/ex/service/impl/DemoServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/classes/com/ex/service/impl/ProductServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/classes/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/target/provider-1.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vue_02/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vue_02/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../qc_parent/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo_01/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../qc_parent/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../qc_parent/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo_01/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../qc_parent/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo_01/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../qc_parent/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo_01/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../qc_parent/qc_common/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../qc_parent/qc_common/qc_common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo_01/dubbo_01.iml" afterDir="false" />
+    <list default="true" id="e8d6fd59-ad2d-4d3b-83c8-15f399b85a28" name="Default Changelist" comment="提交dubbo项目的demo">
+      <change afterPath="$PROJECT_DIR$/provider/target/test-classes/com/ex/service/test/BrandServiceTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_commom_service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_commom_service/qingcheng_commom_service.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_commom_service/src/main/resources/applicationContext-dao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_commom_service/src/main/resources/applicationContext-dubbo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_commom_service/src/main/resources/applicationContext-redis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_commom_service/src/main/resources/redis-config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_commom_service/target/classes/applicationContext-dao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_commom_service/target/classes/applicationContext-dubbo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_commom_service/target/classes/applicationContext-redis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_commom_service/target/classes/redis-config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_commom_service/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_commom_service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_commom_service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_commom_service/target/qingcheng_commom_service-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_common/qingcheng_common.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_common/src/main/resources/applicationContext-common.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_common/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_common/src/main/resources/zk.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_common/target/classes/applicationContext-common.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_common/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_common/target/classes/zk.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_common/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_common/target/qingcheng_common-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_common_web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_common_web/qingcheng_common_web.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_common_web/src/main/resources/applicationContext-dubbo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_common_web/src/main/resources/applicationContext-json.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_common_web/src/main/resources/applicationContext-task.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_common_web/target/classes/applicationContext-dubbo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_common_web/target/classes/applicationContext-json.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_common_web/target/classes/applicationContext-task.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_common_web/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_common_web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_common_web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_common_web/target/qingcheng_common_web-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_interface/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_interface/src/main/java/com/qingcheng/service/goods/BrandService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_interface/target/classes/com/qingcheng/service/goods/BrandService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_interface/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_interface/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_interface/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_interface/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_interface/target/qingcheng_interface-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_pojo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_pojo/qingcheng_pojo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_pojo/src/main/java/com/qingcheng/pojo/goods/Brand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_pojo/target/classes/com/qingcheng/pojo/goods/Brand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_pojo/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_pojo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_pojo/target/qingcheng_pojo-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/qingcheng_service_goods.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/src/main/java/com/qingcheng/dao/BrandMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/src/main/java/com/qingcheng/service/impl/BrandServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/src/main/resources/dubbo.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/classes/com/qingcheng/dao/BrandMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/classes/com/qingcheng/service/impl/BrandServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/classes/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/classes/dubbo.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/classes/com/qingcheng/dao/BrandMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/classes/com/qingcheng/service/impl/BrandServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/classes/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/classes/dubbo.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/aspectjweaver-1.8.13.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/commons-codec-1.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/commons-fileupload-1.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/commons-io-2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/commons-pool2-2.4.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/druid-1.0.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/dubbo-2.6.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/fastjson-1.2.47.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/hamcrest-core-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/httpclient-4.5.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/httpcore-4.4.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/javassist-3.12.1.GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/javassist-3.20.0-GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/jedis-2.9.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/jline-0.9.94.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/junit-4.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/log4j-1.2.16.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/mapper-4.1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/mybatis-3.4.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/mybatis-paginator-1.2.15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/mybatis-spring-1.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/mysql-connector-java-5.1.32.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/netty-3.2.5.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/netty-3.7.0.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/persistence-api-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/qingcheng_commom_service-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/qingcheng_common-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/qingcheng_interface-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/qingcheng_pojo-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/slf4j-api-1.7.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/slf4j-log4j12-1.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/spring-aop-5.0.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/spring-aspects-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/spring-beans-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/spring-context-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/spring-context-support-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/spring-core-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/spring-data-commons-2.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/spring-data-keyvalue-2.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/spring-data-redis-2.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/spring-expression-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/spring-jcl-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/spring-jdbc-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/spring-jms-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/spring-messaging-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/spring-oxm-5.0.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/spring-test-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/spring-tx-5.0.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/spring-web-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/spring-webmvc-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/zkclient-0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/lib/zookeeper-3.4.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/qingcheng_service_goods-1.0.0/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/tomcat/conf/logging.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/tomcat/conf/tomcat-users.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/tomcat/conf/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_service_goods/target/tomcat/logs/access_log.2020-05-23" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/qingcheng_web_manager.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/src/main/java/com/qingcheng/controller/BrandController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/src/main/resources/dubbo.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/classes/com/qingcheng/controller/BrandController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/classes/dubbo.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/classes/com/qingcheng/controller/BrandController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/classes/dubbo.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/aliyun-sdk-oss-2.8.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/aspectjweaver-1.8.13.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/commons-beanutils-1.8.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/commons-codec-1.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/commons-collections-3.2.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/commons-fileupload-1.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/commons-io-2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/commons-lang-2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/dubbo-2.6.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/ezmorph-1.0.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/fastjson-1.2.47.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/hamcrest-core-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/httpclient-4.5.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/httpcore-4.4.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/javassist-3.12.1.GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/javassist-3.20.0-GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/jdom-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/jline-0.9.94.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/json-lib-2.4-jdk15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/junit-4.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/log4j-1.2.16.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/netty-3.2.5.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/netty-3.7.0.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/persistence-api-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/qingcheng_common-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/qingcheng_common_web-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/qingcheng_interface-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/qingcheng_pojo-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/slf4j-api-1.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/slf4j-log4j12-1.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/spring-aop-5.0.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/spring-aspects-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/spring-beans-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/spring-context-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/spring-context-support-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/spring-core-5.0.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/spring-expression-5.0.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/spring-jcl-5.0.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/spring-jdbc-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/spring-jms-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/spring-messaging-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/spring-security-config-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/spring-security-core-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/spring-security-web-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/spring-test-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/spring-tx-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/spring-web-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/spring-webmvc-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/zkclient-0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/lib/zookeeper-3.4.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/qingcheng_web_manager-1.0.0/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/tomcat/conf/logging.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/tomcat/conf/tomcat-users.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/tomcat/conf/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qingcheng/qingcheng_web_manager/target/tomcat/logs/access_log.2020-05-23" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/resources/consumer.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/resources/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/ex/service/impl/BrandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/ex/service/impl/BrandServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/ex/service/impl/BrandServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/provider/target/classes/com/ex/service/impl/BrandServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ssm_zh/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm_zh/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_02/src/main/java/com/ex/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/src/main/java/com/ex/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_02/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/src/main/resources/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_02/src/main/test/com/ex/dao/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/src/main/test/com/ex/dao/UserDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_02/src/main/webapp/js/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/src/main/webapp/js/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_02/src/main/webapp/page/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/src/main/webapp/page/user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_02/target/classes/com/ex/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/target/classes/com/ex/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_02/target/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/target/classes/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_02/target/test-classes/com/ex/dao/UserDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/target/test-classes/com/ex/dao/UserDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_02/target/vue_02-1.0-SNAPSHOT/WEB-INF/classes/com/ex/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/target/vue_02-1.0-SNAPSHOT/WEB-INF/classes/com/ex/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_02/target/vue_02-1.0-SNAPSHOT/WEB-INF/classes/com/ex/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/target/vue_02-1.0-SNAPSHOT/WEB-INF/classes/com/ex/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_02/target/vue_02-1.0-SNAPSHOT/WEB-INF/classes/com/ex/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/target/vue_02-1.0-SNAPSHOT/WEB-INF/classes/com/ex/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_02/target/vue_02-1.0-SNAPSHOT/WEB-INF/classes/com/ex/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/target/vue_02-1.0-SNAPSHOT/WEB-INF/classes/com/ex/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_02/target/vue_02-1.0-SNAPSHOT/WEB-INF/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/target/vue_02-1.0-SNAPSHOT/WEB-INF/classes/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_02/target/vue_02-1.0-SNAPSHOT/js/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/target/vue_02-1.0-SNAPSHOT/js/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_02/target/vue_02-1.0-SNAPSHOT/page/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_02/target/vue_02-1.0-SNAPSHOT/page/user.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +327,7 @@
       <recent name="F:\Java\dubbo_02\common\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Provider">
+  <component name="RunManager" selected="Application.Consumer">
     <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ex.c.Consumer" />
       <module name="consumer" />
@@ -301,8 +386,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589890746552</updated>
-      <workItem from="1589890750291" duration="24415000" />
+      <workItem from="1589890750291" duration="25169000" />
+      <workItem from="1590236548172" duration="1166000" />
     </task>
+    <task id="LOCAL-00001" summary="提交dubbo项目的demo">
+      <created>1590074822113</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590074822113</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,9 +412,14 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="提交dubbo项目的demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交dubbo项目的demo" />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Project_Structure" timestamp="1590064400277">
@@ -351,42 +450,46 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="676" height="466" key="DebuggerActiveHint/0.0.1536.834@0.0.1536.834" timestamp="1589905332856" />
-    <state width="1493" height="343" key="GridCell.Tab.0.bottom" timestamp="1590074370870">
+    <state width="1493" height="343" key="GridCell.Tab.0.bottom" timestamp="1590237748043">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="343" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1590074370870" />
-    <state width="1493" height="343" key="GridCell.Tab.0.center" timestamp="1590074370870">
+    <state width="1493" height="343" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1590237748043" />
+    <state width="1493" height="343" key="GridCell.Tab.0.center" timestamp="1590237748043">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="343" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1590074370870" />
-    <state width="1493" height="343" key="GridCell.Tab.0.left" timestamp="1590074370870">
+    <state width="1493" height="343" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1590237748043" />
+    <state width="1493" height="343" key="GridCell.Tab.0.left" timestamp="1590237748043">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="343" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1590074370870" />
-    <state width="1493" height="343" key="GridCell.Tab.0.right" timestamp="1590074370870">
+    <state width="1493" height="343" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1590237748043" />
+    <state width="1493" height="343" key="GridCell.Tab.0.right" timestamp="1590237748043">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="343" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1590074370870" />
-    <state width="1493" height="278" key="GridCell.Tab.1.bottom" timestamp="1590072101393">
+    <state width="1493" height="343" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1590237748043" />
+    <state width="1493" height="278" key="GridCell.Tab.1.bottom" timestamp="1590075830833">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="278" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1590072101393" />
-    <state width="1493" height="278" key="GridCell.Tab.1.center" timestamp="1590072101393">
+    <state width="1493" height="278" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1590075830833" />
+    <state width="1493" height="278" key="GridCell.Tab.1.center" timestamp="1590075830833">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="278" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1590072101393" />
-    <state width="1493" height="278" key="GridCell.Tab.1.left" timestamp="1590072101393">
+    <state width="1493" height="278" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1590075830833" />
+    <state width="1493" height="278" key="GridCell.Tab.1.left" timestamp="1590075830833">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="278" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1590072101393" />
-    <state width="1493" height="278" key="GridCell.Tab.1.right" timestamp="1590072101393">
+    <state width="1493" height="278" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1590075830833" />
+    <state width="1493" height="278" key="GridCell.Tab.1.right" timestamp="1590075830833">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="278" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1590072101393" />
+    <state width="1493" height="278" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1590075830833" />
     <state x="270" y="0" key="SettingsEditor" timestamp="1590064434224">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="270" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1590064434224" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1590074860980">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1590074860980" />
     <state x="178" y="77" key="new project wizard" timestamp="1589891520844">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

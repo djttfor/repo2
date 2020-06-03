@@ -1,8 +1,12 @@
 package my.hehe;
 
+import com.sun.xml.internal.xsom.impl.scd.Iterators;
 import org.junit.Test;
 
 import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.Map;
+//import java.util.Map;
 
 public class Hehe {
     public void a(){}
@@ -31,5 +35,12 @@ public class Hehe {
         Method method = heheClass.getMethod("a", classes);
         System.out.println(method.getName());
 
+    }
+    @Test
+    public void demo1(){
+        Map<String ,String> map = new HashMap<String ,String>();
+        map.put("a","b");
+
+        System.out.println(map.put("a","c"));
     }
 }

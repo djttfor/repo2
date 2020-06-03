@@ -2,25 +2,25 @@ package com.ex.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.ex.dao.BrandMapper;
 import com.ex.pojo.Brand;
 import com.ex.service.BrandService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.stereotype.Service;
 
 
 import javax.annotation.Resource;
 import java.util.List;
-@Service("brandService")
+@Service
 public class BrandServiceImpl implements BrandService {
-//    @Autowired
-//    BrandMapper brandMapper;
+    @Autowired
+    BrandMapper brandMapper;
 
     public List<Brand> findAll() {
-        ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext-dao.xml");
-        BrandMapper brandMapper = (BrandMapper) ac.getBean("brandMapper");
+//        ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext-dao.xml");
+//        BrandMapper brandMapper = (BrandMapper) ac.getBean("brandMapper");
         return brandMapper.selectAll();
     }
 
