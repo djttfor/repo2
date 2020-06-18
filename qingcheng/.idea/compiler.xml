@@ -12,6 +12,7 @@
         <module name="qingcheng_commom_service" />
         <module name="qingcheng_common_web" />
         <module name="qingcheng_service_goods" />
+        <module name="qingcheng_service_order" />
         <module name="qingcheng_pojo" />
       </profile>
     </annotationProcessing>

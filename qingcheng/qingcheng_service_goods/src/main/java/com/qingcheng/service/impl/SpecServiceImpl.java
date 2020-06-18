@@ -3,8 +3,10 @@ import com.alibaba.dubbo.config.annotation.Service;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.qingcheng.dao.SpecMapper;
+import com.qingcheng.dao.TemplateMapper;
 import com.qingcheng.entity.PageResult;
 import com.qingcheng.pojo.goods.Spec;
+import com.qingcheng.pojo.goods.Template;
 import com.qingcheng.service.goods.SpecService;
 import org.springframework.beans.factory.annotation.Autowired;
 import tk.mybatis.mapper.entity.Example;
@@ -17,6 +19,9 @@ public class SpecServiceImpl implements SpecService {
 
     @Autowired
     private SpecMapper specMapper;
+
+    @Autowired
+    private TemplateMapper templateMapper;
 
     /**
      * 返回全部记录
@@ -76,7 +81,11 @@ public class SpecServiceImpl implements SpecService {
      * @param spec
      */
     public void add(Spec spec) {
+
         specMapper.insert(spec);
+        Template template = templateMapper.selectByPrimaryKey(spec.getTemplateId());
+        template.setSpecNum(template.getSpecNum()+1);
+        templateMapper.updateByPrimaryKeySelective(template);
     }
 
     /**
@@ -92,7 +101,12 @@ public class SpecServiceImpl implements SpecService {
      * @param id
      */
     public void delete(Integer id) {
+        Spec spec = specMapper.selectByPrimaryKey(id);
         specMapper.deleteByPrimaryKey(id);
+
+        Template template = templateMapper.selectByPrimaryKey(spec.getTemplateId());
+        template.setSpecNum(template.getSpecNum()-1);
+        templateMapper.updateByPrimaryKeySelective(template);
     }
 
     /**

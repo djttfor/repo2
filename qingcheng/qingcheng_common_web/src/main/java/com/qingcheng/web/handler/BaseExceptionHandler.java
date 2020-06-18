@@ -12,6 +12,6 @@ public class BaseExceptionHandler {
     public Result error(Exception e){
         e.printStackTrace();
         System.out.println("调用了异常处理");
-        return new Result(1,e.getMessage());
+        return new Result(0,e.getMessage());
     }
 }

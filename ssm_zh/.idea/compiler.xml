@@ -8,9 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ssm_zh_domain" />
         <module name="ssm_zh_service" />
-        <module name="ssm_zh_web" />
-        <module name="ssm_zh_dao" />
         <module name="ssm_zh_utils" />
+        <module name="ssm_zh_dao" />
+        <module name="ssm_zh_web" />
       </profile>
     </annotationProcessing>
   </component>

@@ -92,7 +92,19 @@ public class CategoryServiceImpl implements CategoryService {
      * @param id
      */
     public void delete(Integer id) {
+
         categoryMapper.deleteByPrimaryKey(id);
+    }
+
+    /**
+     * 查询有没有下级记录
+     * @param id
+     */
+    public int selectCountByParentId(Integer id){
+        Example example = new Example(Category.class);
+        Example.Criteria criteria = example.createCriteria();
+        criteria.andEqualTo("parentId",id);
+        return categoryMapper.selectCountByExample(example);
     }
 
     /**

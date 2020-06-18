@@ -90,7 +90,6 @@ public class LogAop {
                 if(methodAnnotation!=null){
                     String url = "";
                     url = classAnnotation.value()[0] + methodAnnotation.value()[0];
-
                     //封装日志对象
                     Syslog syslog = new Syslog();
                     //获取访问时长

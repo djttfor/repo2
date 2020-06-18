@@ -34,4 +34,6 @@ public interface CategoryService {
 
     public void delete(Integer id);
 
+    public int selectCountByParentId(Integer id);
+
 }

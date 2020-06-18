@@ -64,14 +64,14 @@
 <el-input v-model="searchMap.templateId" placeholder="模板ID" class="filter-item" ></el-input></el-form-item>
 
                 <el-button class="dalfBut" @click="fetchData()">查询</el-button>
-                <el-button type="primary"  class="butT" @click="formVisible=true;pojo={}">新增</el-button>
+                <el-button type="primary"  class="butT" @click="formVisible=true;pojo={templateId:templateId}">新增</el-button>
                 </el-form>
             </div>
 
             <el-table :data="tableData" border style="width: 100%">
                           <el-table-column prop="id" label="ID" width="80"></el-table-column>
           <el-table-column prop="name" label="名称" width="80"></el-table-column>
-          <el-table-column prop="options" label="规格选项" width="80"></el-table-column>
+          <el-table-column prop="options" label="规格选项" width="280" type="textarea" :autosize="{minRows:4,maxRows:15}"></el-table-column>
           <el-table-column prop="seq" label="排序" width="80"></el-table-column>
           <el-table-column prop="templateId" label="模板ID" width="80"></el-table-column>
 
@@ -80,6 +80,7 @@
                         <template slot-scope="scope">
                             <el-button @click="edit(scope.row.id)" size="mini" type="primary" size="small">修改</el-button>
                             <el-button @click="dele(scope.row.id)" size="mini" type="danger" size="small">删除</el-button>
+                            <el-button onclick="location.href='template.html'" size="mini" type="primary" size="small">返回</el-button>
                         </template>
                     </el-table-column>
             </el-table>
@@ -135,6 +136,7 @@
 <script src="/js/vue.js"></script>
 <script src="/js/axios.js"></script>
 <script src="/js/elementui.js"></script>
+<script src="/js/util.js"></script>
 <script>
      new Vue({
         el: '#app',
@@ -147,10 +149,13 @@
                 searchMap: {},
                 pojo: {},
                 formVisible: false,
-                imageUrl: ''
+                imageUrl: '',
+                templateId: 0
             }
         },
         created(){
+            this.templateId = getQueryString("templateId");
+            this.searchMap  = {templateId: this.templateId};//查询对应的模板
             this.fetchData();
         },
         methods:{

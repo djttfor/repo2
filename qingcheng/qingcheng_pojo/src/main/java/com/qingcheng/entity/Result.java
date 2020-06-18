@@ -6,11 +6,11 @@ import java.io.Serializable;
  * 插入更新操作的返回结果类
  */
 public class Result implements Serializable {
-    private Integer code; //0代表成功,1代表失败
+    private Integer code; //1代表成功,0代表失败
     private String message;//返回的信息
 
     public Result() {
-        this.code = 0;
+        this.code = 1;
         this.message = "成功";
     }
 

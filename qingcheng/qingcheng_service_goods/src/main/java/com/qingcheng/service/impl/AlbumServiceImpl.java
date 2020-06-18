@@ -95,6 +95,8 @@ public class AlbumServiceImpl implements AlbumService {
         albumMapper.deleteByPrimaryKey(id);
     }
 
+
+
     /**
      * 构建查询条件
      * @param searchMap

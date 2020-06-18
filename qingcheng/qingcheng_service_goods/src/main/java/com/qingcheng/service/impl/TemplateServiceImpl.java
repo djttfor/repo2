@@ -76,6 +76,8 @@ public class TemplateServiceImpl implements TemplateService {
      * @param template
      */
     public void add(Template template) {
+        template.setParaNum(0);//新增的模板肯定是没有参数和spec的
+        template.setSpecNum(0);
         templateMapper.insert(template);
     }
 

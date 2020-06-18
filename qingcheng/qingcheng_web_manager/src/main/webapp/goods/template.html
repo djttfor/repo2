@@ -71,7 +71,12 @@
           <el-table-column prop="name" label="模板名称" width="80"></el-table-column>
           <el-table-column prop="specNum" label="规格数量" width="80"></el-table-column>
           <el-table-column prop="paraNum" label="参数数量" width="80"></el-table-column>
-
+          <el-table-column  label="参数/规格操作" width="197">
+              <template slot-scope="scope">
+                  <el-button @click="goSpec(scope.row.id)" size="mini" type="primary" size="small">规格修改</el-button>
+                  <el-button @click="goPara(scope.row.id)" size="mini" type="primary" size="small">参数修改</el-button>
+              </template>
+          </el-table-column>
                     <el-table-column
                             label="操作"  >
                         <template slot-scope="scope">
@@ -182,6 +187,12 @@
                     })
                 })
             },
+            goSpec(id){
+                location.href="spec.html?templateId="+id;
+            },
+            goPara(id){
+                location.href="para.html?templateId="+id;
+            }
 			/* ****图片上传相关代码  如页面有图片上传功能放开注释 **** 
             handleAvatarSuccess(res, file) {
                 this.imageUrl = file.response;

@@ -13,6 +13,11 @@
     <dependencies>
         <dependency>
             <groupId>com.qingcheng</groupId>
+            <artifactId>qingcheng_pojo</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.qingcheng</groupId>
             <artifactId>qingcheng_common</artifactId>
             <version>1.0.0</version>
         </dependency>

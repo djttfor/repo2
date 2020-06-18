@@ -34,4 +34,5 @@ public interface AlbumService {
 
     public void delete(Long id);
 
+
 }
