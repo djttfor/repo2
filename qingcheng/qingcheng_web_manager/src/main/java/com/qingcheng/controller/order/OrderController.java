@@ -3,7 +3,9 @@ package com.qingcheng.controller.order;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.qingcheng.entity.PageResult;
 import com.qingcheng.entity.Result;
+import com.qingcheng.pojo.order.Hehe;
 import com.qingcheng.pojo.order.Order;
+import com.qingcheng.pojo.order.OrderFull;
 import com.qingcheng.service.order.OrderService;
 import org.springframework.web.bind.annotation.*;
 
@@ -60,4 +62,29 @@ public class OrderController {
         return new Result();
     }
 
+    @GetMapping("/findFullOrderById")
+    public OrderFull findFullOrderById(String id){
+        return orderService.findFullOrderById(id);
+    }
+
+    @PostMapping("/ships")
+    public Result orderShips(@RequestBody List<Order> orders){
+        orderService.orderShips(orders);
+        return new Result();
+    }
+    @PostMapping("/returnApplication")
+    public Result returnApplication(@RequestBody Map<String ,String> map){
+        orderService.returnApplication(map);
+        return new Result();
+    }
+    @PostMapping("/ou")
+    public Result updateOrder(@RequestBody Map<String,String> map){
+        orderService.updateOrder(map);
+        return new Result();
+    }
+    @PostMapping("/hehe")
+    public Result updateOrder(@RequestBody Hehe hehe){
+        orderService.updateOrder(hehe);
+        return new Result();
+    }
 }

@@ -2,7 +2,6 @@ package com.qingcheng.controller.file;
 
 import com.aliyun.oss.OSS;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -35,7 +34,7 @@ public class UploadController {
         String filePath = realPath+"/"+filename;
         File file = new File(filePath);
         if(!file.getParentFile().exists()){
-            file.mkdirs();
+            boolean mkdirs = file.mkdirs();
         }
         try {
             multipartFile.transferTo(file);

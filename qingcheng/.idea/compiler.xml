@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <option name="USE_RELEASE_OPTION" value="false" />
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -10,11 +11,12 @@
         <module name="qingcheng_web_manager" />
         <module name="qingcheng_common" />
         <module name="qingcheng_commom_service" />
-        <module name="qingcheng_common_web" />
         <module name="qingcheng_service_goods" />
-        <module name="qingcheng_service_order" />
         <module name="qingcheng_pojo" />
+        <module name="qingcheng_service_order" />
+        <module name="qingcheng_common_web" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="8" />
   </component>
 </project>

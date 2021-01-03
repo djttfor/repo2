@@ -1,12 +1,15 @@
 <component name="InspectionProjectProfileManager">
   <profile version="1.0">
     <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlRequiredAltAttribute" enabled="true" level="INFORMATION" enabled_by_default="true" />
     <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="2">
+          <list size="4">
             <item index="0" class="java.lang.String" itemvalue="slot-scope" />
             <item index="1" class="java.lang.String" itemvalue=":src" />
+            <item index="2" class="java.lang.String" itemvalue="v-if" />
+            <item index="3" class="java.lang.String" itemvalue="v-else" />
           </list>
         </value>
       </option>
@@ -15,7 +18,7 @@
     <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="16">
+          <list size="19">
             <item index="0" class="java.lang.String" itemvalue="nobr" />
             <item index="1" class="java.lang.String" itemvalue="noembed" />
             <item index="2" class="java.lang.String" itemvalue="comment" />
@@ -32,11 +35,17 @@
             <item index="13" class="java.lang.String" itemvalue="el-button" />
             <item index="14" class="java.lang.String" itemvalue="el-breadcrumb" />
             <item index="15" class="java.lang.String" itemvalue="el-breadcrumb-item" />
+            <item index="16" class="java.lang.String" itemvalue="el-dialog" />
+            <item index="17" class="java.lang.String" itemvalue="el-upload" />
+            <item index="18" class="java.lang.String" itemvalue="el-form" />
           </list>
         </value>
       </option>
       <option name="myCustomValuesEnabled" value="true" />
     </inspection_tool>
     <inspection_tool class="RawUseOfParameterizedType" enabled="true" level="INFORMATION" enabled_by_default="true" />
+    <inspection_tool class="RequiredAttributes" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myAdditionalRequiredHtmlAttributes" value="src" />
+    </inspection_tool>
   </profile>
 </component>

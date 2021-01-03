@@ -2,7 +2,7 @@ package my.util.exception;
 
 import java.io.Serializable;
 
-public class MyException extends Exception {
+public class MyException extends Exception implements Serializable {
     private static final long serialVersionUID = 1820094919486568652L;
     private String message;
 

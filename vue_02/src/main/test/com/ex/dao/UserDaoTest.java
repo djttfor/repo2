@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -31,5 +33,9 @@ public class UserDaoTest {
         user.setUsername("今晚打老虎");
         user.setPassword("1223");
         userDao.updateUser(user);
+    }
+    @Test
+    public void test1(){
+
     }
 }

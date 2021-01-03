@@ -1,6 +1,9 @@
 package com.qingcheng.service.order;
 import com.qingcheng.entity.PageResult;
+import com.qingcheng.entity.Result;
+import com.qingcheng.pojo.order.Hehe;
 import com.qingcheng.pojo.order.Order;
+import com.qingcheng.pojo.order.OrderFull;
 
 import java.util.*;
 
@@ -31,5 +34,17 @@ public interface OrderService {
 
 
     public void delete(String id);
+
+    OrderFull findFullOrderById(String id);
+
+    int orderShips(List<Order> orders);
+
+    int returnApplication(Map<String,String> map);
+
+    void orderOvertimeProcessing();
+
+    void updateOrder(Map<String,String> orderMap) ;
+
+    void updateOrder(Hehe hehe);
 
 }
