@@ -12,6 +12,8 @@
     <modules>
         <module>mvc_01</module>
         <module>sm_01</module>
+        <module>smp_01</module>
+        <module>smp_demo</module>
     </modules>
 
     <properties>
@@ -26,6 +28,7 @@
         <junit5.version>5.2.0</junit5.version>
         <mybatis-spring>2.0.6</mybatis-spring>
         <servlet.version>3.1.0</servlet.version>
+        <aspectj.version>1.9.6</aspectj.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -49,6 +52,12 @@
                 <artifactId>spring-jdbc</artifactId>
                 <version>${spring.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>${aspectj.version}</version>
+            </dependency>
+
 
             <!--JUnit5-->
             <dependency>

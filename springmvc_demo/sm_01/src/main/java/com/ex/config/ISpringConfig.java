@@ -5,19 +5,25 @@ import com.ex.plugins.SQLExtractLog;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.mapper.MapperScannerConfigurer;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
+import org.springframework.jdbc.datasource.DataSourceTransactionManager;
+import org.springframework.stereotype.Controller;
+import org.springframework.transaction.TransactionManager;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
 import java.io.IOException;
 
 @Configuration
-@ComponentScan("com.ex")
+@ComponentScan(value = "com.ex" ,excludeFilters = {@ComponentScan.Filter({Controller.class})})
 @PropertySource("classpath:druid.properties")
+@EnableTransactionManagement
 public class ISpringConfig {
     @Bean("druidDataSource2")
     public DataSource getDataSource(@Value("${druid.driverClassName}") String driverClassName, @Value("${druid.url}") String url,
@@ -43,7 +49,7 @@ public class ISpringConfig {
     }
     @Bean("sqlSessionFactoryBean")
     public SqlSessionFactoryBean getSqlSessionFactoryBean(@Autowired DataSource druidDataSource) throws IOException {
-        SqlSessionFactoryBean ssfb = new SqlSessionFactoryBean();
+        SqlSessionFactoryBean ssfb = new SqlSessionFactoryBean() ;
         ssfb.setDataSource(druidDataSource);
         ssfb.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("classpath:mapper/*Mapper.xml"));
         ssfb.setTypeAliasesPackage("com.ex.pojo");
@@ -60,6 +66,9 @@ public class ISpringConfig {
         msc.setBasePackage("com.ex.mapper");
         return msc;
     }
-
+    @Bean
+    public TransactionManager getTransactionManager(@Qualifier("druidDataSource") @Autowired DataSource dataSource) {
+        return new DataSourceTransactionManager(dataSource);
+    }
 }
 

@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="sm_01" />
+        <module name="smp_demo" />
+        <module name="smp_01" />
         <module name="mvc_01" />
       </profile>
     </annotationProcessing>
@@ -15,6 +17,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="mvc_01" options="-XDignore.symbol.file" />
       <module name="sm_01" options="-XDignore.symbol.file" />
+      <module name="smp_01" options="-XDignore.symbol.file" />
+      <module name="smp_demo" options="-XDignore.symbol.file" />
     </option>
   </component>
 </project>

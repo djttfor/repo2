@@ -30,4 +30,6 @@ public interface UserMapper {
     User findUserByCondition(@Param("uid") Integer uid, @Param("name")String name);
     Integer updateUser(User user);
     Integer saveUser(User user);
+    List<User> findAll2();
+    Integer saveUser2(User user);
 }

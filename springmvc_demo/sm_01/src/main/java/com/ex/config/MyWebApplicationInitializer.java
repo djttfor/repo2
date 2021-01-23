@@ -16,6 +16,8 @@ public class MyWebApplicationInitializer extends AbstractAnnotationConfigDispatc
        cFilter.setInitParameter("encoding","UTF-8");
        cFilter.setInitParameter("forceEncoding", "true");
        cFilter.addMappingForUrlPatterns(null,false,"/*");
+//        ServletRegistration aDefault = servletContext.getServletRegistration("default");
+//        aDefault.addMapping("/page/*");
     }
 
     @Override
