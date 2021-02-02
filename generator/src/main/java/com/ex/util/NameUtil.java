@@ -17,9 +17,16 @@ public class NameUtil {
         return buildName(name,separator,false);
     }
 
+    /**
+     * 下划线转驼峰
+     * @param name
+     * @param separator
+     * @param flag
+     * @return
+     */
     public static String buildName(String name,String separator,boolean flag){
         String[] split = name.split(separator);
-        if (split.length==1) return name;
+       // if (split.length==1) return name;
         StringBuilder sb = new StringBuilder();
         int i = 0;
         for (String s : split) {
@@ -32,6 +39,11 @@ public class NameUtil {
         return sb.toString();
     }
 
+    /**
+     * 首字符大写
+     * @param name
+     * @return
+     */
     public static String firstUpper(String name){
         if(null==name||"".equals(name)){
             return "";

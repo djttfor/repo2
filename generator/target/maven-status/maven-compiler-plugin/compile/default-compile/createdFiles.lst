@@ -1,0 +1,12 @@
+com\ex\util\DatabaseUtil.class
+com\ex\entity\Field.class
+com\ex\database\entity\Column.class
+com\ex\database\entity\Table.class
+com\ex\database\entity\Index.class
+com\ex\cofig\UrlConfig.class
+com\ex\generator\CodeGenerator.class
+com\ex\util\Types.class
+com\ex\cofig\GeneratorMode.class
+com\ex\cofig\FillConfig.class
+com\ex\util\NameUtil.class
+com\ex\cofig\GeneratorConfig.class

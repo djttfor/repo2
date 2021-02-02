@@ -1,6 +1,7 @@
-package com.ex.util;
+package com.ex.cofig;
 
 import com.ex.database.entity.Table;
+import com.ex.util.NameUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,14 +16,14 @@ import java.util.Map;
  */
 
 public class UrlConfig {
-    private String rootPath;
-    private String packageName;
-    private String completePath;
-    private String templatePath;
+    private final String rootPath;
+    private final String packageName;
+    private final String completePath;
 
     private final Map<String,String> packagePath = new HashMap<>();
 
     private final Map<String,String> filePath = new HashMap<>();
+
 
     public String getRootPath() {
         return rootPath;
@@ -36,17 +37,19 @@ public class UrlConfig {
         return completePath;
     }
 
-    public String getTemplatePath() {
-        return templatePath;
-    }
+
 
     public Map<String, String> getPackagePath() {
         return packagePath;
     }
+    public Map<String, String> getFilePath() {
+        return filePath;
+    }
 
     private static final Logger log = LoggerFactory.getLogger(UrlConfig.class);
 
-    public UrlConfig(String rootPath, String packageName, String templatePath, List<Table> tables){
+
+    public UrlConfig(String rootPath, String packageName, List<Table> tables,boolean requireController){
         if(rootPath==null||packageName==null){
             throw new RuntimeException("包名与项目路径不能为空");
         }
@@ -57,9 +60,18 @@ public class UrlConfig {
         packagePath.put("Mapper",completePath+"\\mapper");
         packagePath.put("Service",completePath+"\\service");
         packagePath.put("ServiceImpl",completePath+"\\service\\impl");
+        if(requireController)
         packagePath.put("Controller",completePath+"\\controller");
-        this.templatePath = templatePath;
-        buildClassFilePath(tables);
+
+        for (Table table : tables) {
+            String entityName = NameUtil.buildClassName(table.getTableName());
+            filePath.put(entityName,packagePath.get("Entity")+"\\"+entityName+".java");
+            filePath.put(entityName+"Mapper",packagePath.get("Mapper")+"\\"+entityName+"Mapper.java");
+            filePath.put(entityName+"Service",packagePath.get("Service")+"\\"+entityName+"Service.java");
+            filePath.put(entityName+"ServiceImpl",packagePath.get("ServiceImpl")+"\\"+entityName+"ServiceImpl.java");
+            if(requireController)
+            filePath.put(entityName+"Controller",packagePath.get("Controller")+"\\"+entityName+"Controller.java");
+        }
     }
 
     public void execute(){
@@ -67,22 +79,14 @@ public class UrlConfig {
         createAllFile();
     }
 
-    private void buildClassFilePath(List<Table> tables){
-        for (Table table : tables) {
-            String entityName = NameUtil.buildClassName(table.getTableName());
-            filePath.put(entityName,packagePath.get("Entity")+"\\"+entityName+".java");
-            filePath.put(tableName+"Mapper",packagePath.get("Mapper")+"\\"+entityName+".java");
-            filePath.put(tableName+"Service",packagePath.get("Service")+"\\"+entityName+".java");
-            filePath.put(tableName+"ServiceImpl",packagePath.get("ServiceImpl")+"\\"+entityName+".java");
-            filePath.put(tableName+"Controller",packagePath.get("Controller")+"\\"+entityName+".java");
-        }
-    }
+    //创建所有目录
     private void createAllPackagePath(){
-        createDirectory(completePath);
+        createDirectory(completePath);//根目录不存在则创建
         packagePath.forEach((k,v)->{
             createDirectory(v);
         });
     }
+    //创建所有文件
     private void createAllFile(){
         filePath.forEach((k,v)->{
             try {
@@ -95,25 +99,17 @@ public class UrlConfig {
     private void createDirectory(String path){
         File rootFile = new File(path);
         if(!rootFile.exists()){
-            log.info("创建路径:"+path);
             if(!rootFile.mkdirs()){
-                throw new RuntimeException("创建失败");
+                throw new RuntimeException("创建路径"+path+"失败");
             }
-            log.info("创建成功");
-        }else{
-            log.info("路径"+path+"已存在");
         }
     }
     private void createFile(String fileName) throws IOException {
         File file = new File(fileName);
         if(!file.exists()){
-            log.info("创建文件:"+fileName);
             if(!file.createNewFile()){
-                log.info("创建失败");
+                log.info("创建文件"+fileName+"失败");
             }
-            log.info("创建成功");
-        }else{
-            log.info("文件"+fileName+"已存在");
         }
     }
 

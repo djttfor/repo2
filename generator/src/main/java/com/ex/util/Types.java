@@ -318,11 +318,11 @@ public class Types {
             case Types.BOOLEAN:
                 return "java.lang.Boolean";
 
+            case Types.INTEGER:
             case Types.TINYINT:
             case Types.SMALLINT:
                 return "java.lang.Integer";
 
-            case Types.INTEGER:
             case Types.BIGINT:
                 return "java.lang.Long";
 

@@ -13,6 +13,8 @@ public class Column {
 
     private boolean primary;
 
+    private boolean autoIncrement;
+
     private String comment;
 
     private String decimalDigits;
@@ -30,9 +32,18 @@ public class Column {
                 ", length='" + length + '\'' +
                 ", notNull=" + notNull +
                 ", primary=" + primary +
+                ", autoIncrement=" + autoIncrement +
                 ", comment='" + comment + '\'' +
                 ", decimalDigits='" + decimalDigits + '\'' +
                 '}';
+    }
+
+    public boolean isAutoIncrement() {
+        return autoIncrement;
+    }
+
+    public void setAutoIncrement(boolean autoIncrement) {
+        this.autoIncrement = autoIncrement;
     }
 
     public String getJdbcType() {

@@ -2,7 +2,7 @@ package com.ex.entity;
 
 import java.util.Objects;
 
-public  class Field{
+public class Field{
         private String type;
         private String name;
 
