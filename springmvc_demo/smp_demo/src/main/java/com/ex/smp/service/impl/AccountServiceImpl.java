@@ -7,7 +7,6 @@ import com.ex.smp.mapper.AccountMapper;
 import com.ex.smp.service.IAccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
@@ -49,7 +48,6 @@ public class AccountServiceImpl extends ServiceImpl<AccountMapper, Account> impl
     }
 
     @Override
-    @Transactional(propagation = Propagation.REQUIRES_NEW)
     public Boolean transfer(Integer rId, Integer tId, Long balance) {
         Long resourceBalance = getBalance(rId);
         if(resourceBalance<balance){

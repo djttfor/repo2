@@ -8,10 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="sm_01" />
         <module name="smp_demo" />
-        <module name="smp_01" />
         <module name="mvc_01" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="smp_01" target="8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

@@ -1,0 +1,54 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ssm_annotation:war exploded">
+    <output-path>$PROJECT_DIR$/ssm_annotation/target/ssm_annotation-1.0.0</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>ssm_annotation</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ssm_annotation" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.baomidou:mybatis-plus:3.4.2" />
+          <element id="library" level="project" name="Maven: com.baomidou:mybatis-plus-extension:3.4.2" />
+          <element id="library" level="project" name="Maven: com.baomidou:mybatis-plus-core:3.4.2" />
+          <element id="library" level="project" name="Maven: com.baomidou:mybatis-plus-annotation:3.4.2" />
+          <element id="library" level="project" name="Maven: com.github.jsqlparser:jsqlparser:4.0" />
+          <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.5.6" />
+          <element id="library" level="project" name="Maven: org.mybatis:mybatis-spring:2.0.5" />
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-slf4j-impl:2.13.3" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-api:2.13.3" />
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-core:2.13.3" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:5.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-test:5.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:5.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.9.6" />
+          <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.73" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.32" />
+          <element id="library" level="project" name="Maven: com.alibaba:druid:1.1.23" />
+          <element id="library" level="project" name="Maven: com.ex:generator:1.0.0" />
+          <element id="library" level="project" name="Maven: org.freemarker:freemarker:2.3.30" />
+          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/ssm_annotation/target/ssm_annotation-1.0.0/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="ssm_annotation/web/Web" />
+    </root>
+  </artifact>
+</component>

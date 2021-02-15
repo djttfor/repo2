@@ -1,14 +1,11 @@
 package com.ex.generator;
 
-import com.ex.cofig.GeneratorConfig;
-import com.ex.cofig.GeneratorMode;
+import com.ex.cofig.*;
 import com.ex.database.entity.Column;
 import com.ex.database.entity.Table;
 import com.ex.entity.Field;
-import com.ex.cofig.FillConfig;
 import com.ex.util.DatabaseUtil;
 import com.ex.util.NameUtil;
-import com.ex.cofig.UrlConfig;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
@@ -30,22 +27,21 @@ public class CodeGenerator {
     }
     private static final Logger log = LoggerFactory.getLogger(CodeGenerator.class);
     public static void main(String[] args) throws Exception {
-        GeneratorConfig config = new GeneratorConfig();
-        config.setRootPath("F:\\Java\\generator\\src\\main\\java");
-        config.setPackageName("com.ex.test.com.ex.ssm");
-        config.setDriverClassName("com.mysql.jdbc.Driver");
-        config.setUrl("jdbc:mysql://localhost/base?useUnicode=true&amp;characterEncoding=utf-8");
-        config.setUsername("root");
-        config.setPassword("1998");
-        CodeGenerator codeGenerator = new CodeGenerator(config);
-        codeGenerator.generate();
-
+        //测试代码
+//        GeneratorConfig config = new GeneratorConfig();
+//        config.setRootPath("F:\\Java\\generator\\src\\main\\java");
+//        config.setPackageName("com.ex.test.com.ex.ssm");
+//        InputStream in = CodeGenerator.class.getClassLoader().getResourceAsStream("druid.properties");
+//        config.buildDatabaseConfig(in);
+//        CodeGenerator codeGenerator = new CodeGenerator(config);
+//        codeGenerator.generate();
 
     }
     //执行生成
      public void generate() throws Exception {
-        List<Table> tables = DatabaseUtil.getDatabaseConfig(generatorConfig.getDriverClassName(),
-                generatorConfig.getUrl(), generatorConfig.getUsername(), generatorConfig.getPassword());
+        DatabaseConfig databaseConfig = generatorConfig.getDatabaseConfig();
+        List<Table> tables = DatabaseUtil.getDatabaseConfig(databaseConfig.getDriverClassName(),
+                databaseConfig.getUrl(), databaseConfig.getUsername(), databaseConfig.getPassword());
         UrlConfig urlConfig = new UrlConfig(generatorConfig.getRootPath(),generatorConfig.getPackageName(),
                 tables,generatorConfig.isRequireController());
         urlConfig.execute();//生成所有文件

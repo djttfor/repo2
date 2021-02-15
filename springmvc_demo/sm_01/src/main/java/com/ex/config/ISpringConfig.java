@@ -1,6 +1,7 @@
 package com.ex.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
+import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
 import com.ex.plugins.SQLExtractLog;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.mapper.MapperScannerConfigurer;
@@ -16,6 +17,8 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.TransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.web.multipart.MultipartResolver;
+import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
 import javax.sql.DataSource;
 import java.io.IOException;
@@ -69,6 +72,17 @@ public class ISpringConfig {
     @Bean
     public TransactionManager getTransactionManager(@Qualifier("druidDataSource") @Autowired DataSource dataSource) {
         return new DataSourceTransactionManager(dataSource);
+    }
+    @Bean("multipartResolver")
+    public MultipartResolver createMultipartResolver(){
+        CommonsMultipartResolver c = new CommonsMultipartResolver();
+        c.setMaxUploadSize(1024*1024*5);
+        c.setDefaultEncoding("UTF-8");//避免文件名乱码,但无法使内容不乱码
+        return c;
+    }
+    @Bean
+    public FastJsonHttpMessageConverter createFJHMConverter(){
+        return new FastJsonHttpMessageConverter();
     }
 }
 

@@ -100,7 +100,7 @@ public class UrlConfig {
         File rootFile = new File(path);
         if(!rootFile.exists()){
             if(!rootFile.mkdirs()){
-                throw new RuntimeException("创建路径"+path+"失败");
+                throw new RuntimeException("创建路径:"+path+"失败");
             }
         }
     }
@@ -108,7 +108,7 @@ public class UrlConfig {
         File file = new File(fileName);
         if(!file.exists()){
             if(!file.createNewFile()){
-                log.info("创建文件"+fileName+"失败");
+                throw new RuntimeException("创建文件:"+fileName+"失败");
             }
         }
     }

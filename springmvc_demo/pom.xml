@@ -12,7 +12,6 @@
     <modules>
         <module>mvc_01</module>
         <module>sm_01</module>
-        <module>smp_01</module>
         <module>smp_demo</module>
     </modules>
 

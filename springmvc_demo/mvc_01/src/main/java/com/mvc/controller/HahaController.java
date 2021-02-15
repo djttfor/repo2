@@ -160,6 +160,14 @@ public class HahaController {
     public User rememberPassword(HttpServletRequest request){
         return (User) request.getSession().getAttribute("user");
     }
+    @RequestMapping("/demo1")
+    @ResponseBody
+    public User demo1(){
+        User user = new User();
+        user.setUsername("jimmy");
+        user.setPassword("123");
+        return user;
+    }
 //    @RequestMapping("/login")
 //    public String login(User user){
 //        logger.info(user.toString());

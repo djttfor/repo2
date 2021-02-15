@@ -46,7 +46,7 @@
     <aop:aspectj-autoproxy/>
     <bean id="transactionManager"
           class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="druidDataSource"/>
+        <property name="dataSource" ref="druidDataSource" />
     </bean>
     <tx:annotation-driven  />
     <!--aop基础配置,配置aop作用在那个类-->
@@ -57,7 +57,7 @@
 <!--配置事务作用的方法以及事务的行为-->
     <tx:advice id="myAdvice">
         <tx:attributes>
-            <tx:method name="find*" read-only="true"/>
+            <tx:method name="find*" read-only="true" />
             <tx:method name="tr*" no-rollback-for="java.lang.RuntimeException"/>
         </tx:attributes>
     </tx:advice>

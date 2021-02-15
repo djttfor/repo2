@@ -12,10 +12,18 @@ public class MyWebApplicationInitializer extends AbstractAnnotationConfigDispatc
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
        super.onStartup(servletContext);
-       FilterRegistration.Dynamic cFilter = servletContext.addFilter("characterEncodingFilter", CharacterEncodingFilter.class);
+       FilterRegistration.Dynamic cFilter =
+               servletContext.addFilter("characterEncodingFilter", CharacterEncodingFilter.class);
        cFilter.setInitParameter("encoding","UTF-8");
        cFilter.setInitParameter("forceEncoding", "true");
        cFilter.addMappingForUrlPatterns(null,false,"/*");
+
+
+//        EnumSet<DispatcherType> dispatcherTypes = EnumSet.allOf(DispatcherType.class);
+//        dispatcherTypes.add(DispatcherType.REQUEST);
+//        dispatcherTypes.add(DispatcherType.FORWARD);
+        //cFilter.addMappingForUrlPatterns(dispatcherTypes,true,"/*");
+
 //        ServletRegistration aDefault = servletContext.getServletRegistration("default");
 //        aDefault.addMapping("/page/*");
     }

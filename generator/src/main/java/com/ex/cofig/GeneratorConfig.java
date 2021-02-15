@@ -1,15 +1,16 @@
 package com.ex.cofig;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
+
 public class GeneratorConfig {
     //项目根路径
     private String rootPath;
     //包名
     private String packageName;
     //数据库配置
-    private String driverClassName;
-    private String url;
-    private String username;
-    private String password;
+    private DatabaseConfig databaseConfig;
 
     //entity类是否需要实现Serializable接口
     private boolean serializableFlag = false;
@@ -29,6 +30,13 @@ public class GeneratorConfig {
         //默认生成controller
         requireController = true;
     }
+
+    public void buildDatabaseConfig(InputStream in) throws IOException {
+        Properties p = new Properties();
+        p.load(in);
+        this.databaseConfig = DatabaseConfig.buildDatabaseConfig(p);
+    }
+
 
     public boolean isRequireController() {
         return requireController;
@@ -77,36 +85,12 @@ public class GeneratorConfig {
         this.packageName = packageName;
     }
 
-    public String getDriverClassName() {
-        return driverClassName;
+    public DatabaseConfig getDatabaseConfig() {
+        return databaseConfig;
     }
 
-    public void setDriverClassName(String driverClassName) {
-        this.driverClassName = driverClassName;
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
+    public void setDatabaseConfig(DatabaseConfig databaseConfig) {
+        this.databaseConfig = databaseConfig;
     }
 
 }
