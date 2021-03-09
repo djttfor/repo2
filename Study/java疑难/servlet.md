@@ -253,3 +253,7 @@ private static boolean matchFiltersURL(String testPath, String requestPath) {
 
 ```
 
+```properties
+-Dfile.encoding=UTF-8   //IDEA-> Help -> Edit Custom VM Options添加
+java.util.logging.ConsoleHandler.encoding = UTF-8   //tomcat安装目录/conf/logging/修改为UTF-8
+```

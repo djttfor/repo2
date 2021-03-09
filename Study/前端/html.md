@@ -102,6 +102,12 @@ option: value
     <option value="3">霓虹</option>
     <option value="4">阿三</option>
 </select>
+<!-- 下拉框展开-->
+<select v-model="selected" multiple="multiple" style="width: 50px;display: block;">
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+</select>
 ```
 
 ### 9.文本域
